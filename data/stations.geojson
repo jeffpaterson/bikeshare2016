@@ -1,0 +1,1328 @@
+var start = {
+"type": "FeatureCollection",
+
+"features": [
+{ "type": "Feature", "properties": { "Site_ID": "Embr-E", "Long": -122.403234, "Lat": 37.80477, "Station_Lo": "Plaza", "Location_N": "Public - Port - Land side", "Phase_IA": 0.0, "Station_ID": 77.0, "San_Franci": "Embr-E", "Long_1": -122.403234, "Lat_1": 37.80477, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.403234077602008, 37.804769990026188 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Embr-F1", "Long": -122.398431, "Lat": 37.799956, "Station_Lo": "Sidewalk", "Location_N": "Public - Port - Land side", "Phase_IA": 1.0, "Station_ID": 78.0, "San_Franci": "Embr-F1", "Long_1": -122.398431, "Lat_1": 37.799956, "Station__1": "Sidewalk", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.398431, 37.799956 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Embr-G1", "Long": -122.394203, "Lat": 37.795392, "Station_Lo": "Plaza", "Location_N": "Public- Port - Land side", "Phase_IA": 1.0, "Station_ID": 79.0, "San_Franci": "Embr-G1", "Long_1": -122.394203, "Lat_1": 37.795392, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.394203, 37.795392 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Embr-H1", "Long": -122.391, "Lat": 37.791569, "Station_Lo": "Plaza", "Location_N": "Private - Gap Inc.", "Phase_IA": 1.0, "Station_ID": 80.0, "San_Franci": "Embr-H1", "Long_1": -122.391, "Lat_1": 37.791569, "Station__1": "Plaza", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.391, 37.791569 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Embr-I3", "Long": -122.388075, "Lat": 37.787825, "Station_Lo": "Plaza", "Location_N": "Public - Port - Land side", "Phase_IA": 1.0, "Station_ID": 81.0, "San_Franci": "Embr-I3", "Long_1": -122.388075, "Lat_1": 37.787825, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.38812761178994, 37.787162764354271 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Embr-J", "Long": -122.387964, "Lat": 37.781558, "Station_Lo": "Plaza", "Location_N": "Public - Port - Water side", "Phase_IA": 0.0, "Station_ID": 82.0, "San_Franci": "Embr-J", "Long_1": -122.387964, "Lat_1": 37.781558, "Station__1": "Plaza", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "1b", "Notes": "backup if no Kearny\/California (Kearny\/Pine)" }, "geometry": { "type": "Point", "coordinates": [ -122.38796422678999, 37.781558272142412 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-0", "Long": -122.418954, "Lat": 37.774814, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Public Works", "Phase_IA": 1.0, "Station_ID": 83.0, "San_Franci": "Market-0", "Long_1": -122.418954, "Lat_1": 37.774814, "Station__1": "Sidewalk", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.4189542, 37.77481383 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-01A", "Long": -122.404966, "Lat": 37.786305, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Public Works", "Phase_IA": 1.0, "Station_ID": 84.0, "San_Franci": "Market-01A", "Long_1": -122.404966, "Lat_1": 37.786305, "Station__1": "Sidewalk", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40496551, 37.786304540000017 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-02", "Long": -122.399128, "Lat": 37.791425, "Station_Lo": "Plaza", "Location_N": "Public - Department of Public Works", "Phase_IA": 1.0, "Station_ID": 85.0, "San_Franci": "Market-02", "Long_1": -122.399128, "Lat_1": 37.791425, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39912834, 37.791425320000016 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-03B", "Long": -122.412919, "Lat": 37.780356, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Recration and Parks", "Phase_IA": 1.0, "Station_ID": 86.0, "San_Franci": "Market-03B", "Long_1": -122.412919, "Lat_1": 37.780356, "Station__1": "Sidewalk", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.412919, 37.780356 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-04", "Long": -122.410215, "Lat": 37.782461, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Public Works", "Phase_IA": 0.0, "Station_ID": 87.0, "San_Franci": "Market-04", "Long_1": -122.410215, "Lat_1": 37.782461, "Station__1": "Sidewalk", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.410215470000011, 37.782460689999986 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-06B", "Long": -122.417292, "Lat": 37.776861, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Public Works", "Phase_IA": 1.0, "Station_ID": 88.0, "San_Franci": "Market-06B", "Long_1": -122.417292, "Lat_1": 37.776861, "Station__1": "Sidewalk", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.41729, 37.776861 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-07A", "Long": -122.408433, "Lat": 37.783871, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Public Works", "Phase_IA": 1.0, "Station_ID": 89.0, "San_Franci": "Market-07A", "Long_1": -122.408433, "Lat_1": 37.783871, "Station__1": "Sidewalk", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40843329, 37.78387149 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-9E", "Long": -122.400811, "Lat": 37.789625, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Public Works", "Phase_IA": 1.0, "Station_ID": 90.0, "San_Franci": "Market-9E", "Long_1": -122.400811, "Lat_1": 37.789625, "Station__1": "Sidewalk", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.400811, 37.789625 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-10A", "Long": -122.394434, "Lat": 37.794139, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 91.0, "San_Franci": "Market-10A", "Long_1": -122.394434, "Lat_1": 37.794139, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39443369, 37.79413939 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "Market-11B", "Long": -122.397081, "Lat": 37.792369, "Station_Lo": "On-Street", "Location_N": "Gray Meters & Yellow Meters", "Phase_IA": 1.0, "Station_ID": 92.0, "San_Franci": "Market-11B", "Long_1": -122.397081, "Lat_1": 37.792369, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.397081, 37.792369 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-01B", "Long": -122.401411, "Lat": 37.801622, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 93.0, "San_Franci": "NOMA-01B", "Long_1": -122.401411, "Lat_1": 37.801622, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "1b", "Notes": "Back up if paving schedule aligns" }, "geometry": { "type": "Point", "coordinates": [ -122.401396877270372, 37.801448253919688 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-02E", "Long": -122.400736, "Lat": 37.798633, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 94.0, "San_Franci": "NOMA-02E", "Long_1": -122.400736, "Lat_1": 37.798633, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.400736, 37.798633 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-03C", "Long": -122.398436, "Lat": 37.79728, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 95.0, "San_Franci": "NOMA-03C", "Long_1": -122.398436, "Lat_1": 37.79728, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39843643, 37.79727957 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-04B", "Long": -122.396653, "Lat": 37.796386, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 96.0, "San_Franci": "NOMA-04B", "Long_1": -122.396653, "Lat_1": 37.796386, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39665, 37.796386 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-05A", "Long": -122.39997, "Lat": 37.795001, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Public Works", "Phase_IA": 1.0, "Station_ID": 97.0, "San_Franci": "NOMA-05A", "Long_1": -122.39997, "Lat_1": 37.795001, "Station__1": "Sidewalk", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": "backup" }, "geometry": { "type": "Point", "coordinates": [ -122.39996991, 37.795001190000015 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-06C", "Long": -122.402836, "Lat": 37.794289, "Station_Lo": "On-Street", "Location_N": "Yellow Meters", "Phase_IA": 1.0, "Station_ID": 98.0, "San_Franci": "NOMA-06C", "Long_1": -122.402836, "Lat_1": 37.794289, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40284, 37.794289 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-09A", "Long": -122.405133, "Lat": 37.788589, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 99.0, "San_Franci": "NOMA-09A", "Long_1": -122.405133, "Lat_1": 37.788589, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.405133, 37.78859 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-10A", "Long": -122.4051, "Lat": 37.796916, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 100.0, "San_Franci": "NOMA-10A", "Long_1": -122.4051, "Lat_1": 37.796916, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1b", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40510021, 37.79691554 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-11B", "Long": -122.400514, "Lat": 37.796906, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 101.0, "San_Franci": "NOMA-11B", "Long_1": -122.400514, "Lat_1": 37.796906, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40051, 37.796906 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-13E", "Long": -122.407156, "Lat": 37.798508, "Station_Lo": "On-Street", "Location_N": "Grey Meters", "Phase_IA": 1.0, "Station_ID": 102.0, "San_Franci": "NOMA-13E", "Long_1": -122.407156, "Lat_1": 37.798508, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.407156, 37.798508 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-14", "Long": -122.415856, "Lat": 37.778825, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 103.0, "San_Franci": "NOMA-14", "Long_1": -122.415856, "Lat_1": 37.778825, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.415856, 37.778825 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-18", "Long": -122.404089, "Lat": 37.796281, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 104.0, "San_Franci": "NOMA-18", "Long_1": -122.404089, "Lat_1": 37.796281, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.404089, 37.796281 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-20B", "Long": -122.401583, "Lat": 37.791958, "Station_Lo": "On-Street", "Location_N": "Alley - No parking restrictions", "Phase_IA": 0.0, "Station_ID": 105.0, "San_Franci": "NOMA-20B", "Long_1": -122.401583, "Lat_1": 37.791958, "Station__1": "On-Street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.401583, 37.791958 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-21B", "Long": -122.404908, "Lat": 37.792578, "Station_Lo": "On-Street", "Location_N": "Grey Meters", "Phase_IA": 1.0, "Station_ID": 106.0, "San_Franci": "NOMA-21B", "Long_1": -122.404908, "Lat_1": 37.792578, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": "Property owner still opposed, investigating nearby alternate site" }, "geometry": { "type": "Point", "coordinates": [ -122.404505669900814, 37.791785313421322 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-22B", "Long": -122.418714, "Lat": 37.78143, "Station_Lo": "Sidewalk", "Location_N": "Public - Department of Public Works", "Phase_IA": 1.0, "Station_ID": 107.0, "San_Franci": "NOMA-22B", "Long_1": -122.418714, "Lat_1": 37.78143, "Station__1": "Sidewalk", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.41871423, 37.78143016 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-23B", "Long": -122.415139, "Lat": 37.780819, "Station_Lo": "On-Street", "Location_N": "Grey Meters", "Phase_IA": 0.0, "Station_ID": 108.0, "San_Franci": "NOMA-23B", "Long_1": -122.415139, "Lat_1": 37.780819, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.415139, 37.780819 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-24A", "Long": -122.417944, "Lat": 37.778696, "Station_Lo": "Plaza", "Location_N": "Public - Department of Recration and Parks", "Phase_IA": 1.0, "Station_ID": 109.0, "San_Franci": "NOMA-24A", "Long_1": -122.417944, "Lat_1": 37.778696, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.418147649702476, 37.778818563331086 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-25A", "Long": -122.408499, "Lat": 37.788446, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 110.0, "San_Franci": "NOMA-25A", "Long_1": -122.408499, "Lat_1": 37.788446, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40849853, 37.788445959999954 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-26A", "Long": -122.404767, "Lat": 37.795425, "Station_Lo": "On-Street", "Location_N": "Grey Meters", "Phase_IA": 1.0, "Station_ID": 111.0, "San_Franci": "NOMA-26A", "Long_1": -122.404767, "Lat_1": 37.795425, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.404767, 37.795425 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-28", "Long": -122.402433, "Lat": 37.800447, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 112.0, "San_Franci": "NOMA-28", "Long_1": -122.402433, "Lat_1": 37.800447, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40243, 37.800447 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-30", "Long": -122.400183, "Lat": 37.793239, "Station_Lo": "On-Street", "Location_N": "Yellow Meters\/Peak Hour Tow Away", "Phase_IA": 0.0, "Station_ID": 113.0, "San_Franci": "NOMA-30", "Long_1": -122.400183, "Lat_1": 37.793239, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40018272, 37.79323928 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-31A", "Long": -122.401875, "Lat": 37.795717, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 114.0, "San_Franci": "NOMA-31A", "Long_1": -122.401875, "Lat_1": 37.795717, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 1.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.401875, 37.795717 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-32", "Long": -122.403452, "Lat": 37.788975, "Station_Lo": "On-Street", "Location_N": "Yellow Meters", "Phase_IA": 1.0, "Station_ID": 115.0, "San_Franci": "NOMA-32", "Long_1": -122.403452, "Lat_1": 37.788975, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40345204, 37.78897469 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "NOMA-33C", "Long": -122.397578, "Lat": 37.794489, "Station_Lo": "On-Street", "Location_N": "Yellow Meters", "Phase_IA": 0.0, "Station_ID": 116.0, "San_Franci": "NOMA-33C", "Long_1": -122.397578, "Lat_1": 37.794489, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.397578, 37.794489 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-02B", "Long": -122.392865, "Lat": 37.775168, "Station_Lo": "Plaza", "Location_N": "Public - Redevelopment Agency", "Phase_IA": 0.0, "Station_ID": 117.0, "San_Franci": "SOMA-02B", "Long_1": -122.392865, "Lat_1": 37.775168, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.392865400000019, 37.775167859999975 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-03", "Long": -122.409303, "Lat": 37.778155, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 118.0, "San_Franci": "SOMA-03", "Long_1": -122.409303, "Lat_1": 37.778155, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "1b", "Notes": "Original site is constrained, investigating nearby alternate site. Might need additional environmental clearance" }, "geometry": { "type": "Point", "coordinates": [ -122.40930336, 37.77815522 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-06A", "Long": -122.393628, "Lat": 37.790611, "Station_Lo": "Plaza", "Location_N": "Public -Temporary Transbay Terminal", "Phase_IA": 1.0, "Station_ID": 119.0, "San_Franci": "SOMA-06A", "Long_1": -122.393628, "Lat_1": 37.790611, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.3936284, 37.79061105 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-07B", "Long": -122.41143, "Lat": 37.77911, "Station_Lo": "Plaza", "Location_N": "Public - General Services Administration", "Phase_IA": 0.0, "Station_ID": 120.0, "San_Franci": "SOMA-07B", "Long_1": -122.41143, "Lat_1": 37.77911, "Station__1": "Plaza", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.4114295, 37.77910989 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-08A", "Long": -122.405127, "Lat": 37.781752, "Station_Lo": "On-Street", "Location_N": "Tow Away No Parking Lane", "Phase_IA": 0.0, "Station_ID": 121.0, "San_Franci": "SOMA-08A", "Long_1": -122.405127, "Lat_1": 37.781752, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "1", "Notes": "Still recommend two at Caltrain" }, "geometry": { "type": "Point", "coordinates": [ -122.4051271, 37.78175165 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-09A", "Long": -122.400018, "Lat": 37.781228, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 122.0, "San_Franci": "SOMA-09A", "Long_1": -122.400018, "Lat_1": 37.781228, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": "original backup, but Central Subway conflict" }, "geometry": { "type": "Point", "coordinates": [ -122.40001788, 37.78122792 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-01A", "Long": -122.407341, "Lat": 37.782448, "Station_Lo": "On-Street", "Location_N": "Alley - Tow Away No Parking Lane", "Phase_IA": 0.0, "Station_ID": 123.0, "San_Franci": "SOMA-01A", "Long_1": -122.407341, "Lat_1": 37.782448, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.4073408, 37.7824476 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-10C", "Long": -122.402717, "Lat": 37.771058, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 124.0, "San_Franci": "SOMA-10C", "Long_1": -122.402717, "Lat_1": 37.771058, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.40271707, 37.77105752 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-11B", "Long": -122.394511, "Lat": 37.777575, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 125.0, "San_Franci": "SOMA-11B", "Long_1": -122.394511, "Lat_1": 37.777575, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1b", "Notes": "Need to assess demand" }, "geometry": { "type": "Point", "coordinates": [ -122.394511, 37.777575 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-12C", "Long": -122.396236, "Lat": 37.785299, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 126.0, "San_Franci": "SOMA-12C", "Long_1": -122.396236, "Lat_1": 37.785299, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39623621, 37.78529909 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-15C", "Long": -122.390264, "Lat": 37.789625, "Station_Lo": "On-Street", "Location_N": "Gray Meters & White Zone", "Phase_IA": 1.0, "Station_ID": 127.0, "San_Franci": "SOMA-15C", "Long_1": -122.390264, "Lat_1": 37.789625, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.390264, 37.78962459 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-17", "Long": -122.401014, "Lat": 37.784878, "Station_Lo": "Plaza", "Location_N": "Public - Yerba Buena Center of the Arts", "Phase_IA": 1.0, "Station_ID": 128.0, "San_Franci": "SOMA-17", "Long_1": -122.401014, "Lat_1": 37.784878, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.4010139, 37.78487792 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-18C", "Long": -122.396289, "Lat": 37.788424, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 129.0, "San_Franci": "SOMA-18C", "Long_1": -122.396289, "Lat_1": 37.788424, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39628853, 37.78842435 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-19", "Long": -122.402308, "Lat": 37.780995, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 130.0, "San_Franci": "SOMA-19", "Long_1": -122.402308, "Lat_1": 37.780995, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.402307599999986, 37.7809947 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-13A", "Long": -122.392738, "Lat": 37.782259, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 131.0, "San_Franci": "SOMA-13A", "Long_1": -122.392738, "Lat_1": 37.782259, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39273805, 37.7822589 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-21", "Long": -122.398108, "Lat": 37.786978, "Station_Lo": null, "Location_N": null, "Phase_IA": 1.0, "Station_ID": 132.0, "San_Franci": "SOMA-21", "Long_1": -122.398108, "Lat_1": 37.786978, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.398108, 37.786978 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-20", "Long": -122.399303, "Lat": 37.787741, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 133.0, "San_Franci": "SOMA-20", "Long_1": -122.399303, "Lat_1": 37.787741, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39930335, 37.78774149 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-22", "Long": -122.392494, "Lat": 37.788637, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 0.0, "Station_ID": 134.0, "San_Franci": "SOMA-22", "Long_1": -122.392494, "Lat_1": 37.788637, "Station__1": "On-street", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39249422, 37.78863748 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-27A", "Long": -122.390566, "Lat": 37.768838, "Station_Lo": "Plaza", "Location_N": "Private - UCSF", "Phase_IA": 0.0, "Station_ID": 135.0, "San_Franci": "SOMA-27A", "Long_1": -122.390566, "Lat_1": 37.768838, "Station__1": "Plaza", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "1b", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39056632, 37.76883802 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-29", "Long": -122.39491, "Lat": 37.791564, "Station_Lo": "Plaza", "Location_N": "Public - Temporary Transbay Terminal", "Phase_IA": 0.0, "Station_ID": 136.0, "San_Franci": "SOMA-29", "Long_1": -122.39491, "Lat_1": 37.791564, "Station__1": "Plaza", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39491042, 37.79156384 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-30", "Long": -122.3946, "Lat": 37.776358, "Station_Lo": "Plaza", "Location_N": "Public - Caltrain", "Phase_IA": 0.0, "Station_ID": 137.0, "San_Franci": "SOMA-30", "Long_1": -122.3946, "Lat_1": 37.776358, "Station__1": "Plaza", "Alta_Draft": 2.0, "SFMTA_Draf": 2.0, "Rnd_1": 2.0, "Rnd_2": 2.0, "Rnd_3": "2", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.3946, 37.77636 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-30B", "Long": -122.395569, "Lat": 37.776317, "Station_Lo": "Plaza", "Location_N": "Public - Caltrain", "Phase_IA": 1.0, "Station_ID": 138.0, "San_Franci": "SOMA-30B", "Long_1": -122.395569, "Lat_1": 37.776317, "Station__1": "Plaza", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.395569, 37.776317 ] } }
+,
+{ "type": "Feature", "properties": { "Site_ID": "SOMA-25", "Long": -122.390288, "Lat": 37.780526, "Station_Lo": "On-Street", "Location_N": "Gray Meters", "Phase_IA": 1.0, "Station_ID": 139.0, "San_Franci": "SOMA-25", "Long_1": -122.390288, "Lat_1": 37.780526, "Station__1": "On-street", "Alta_Draft": 1.0, "SFMTA_Draf": 1.0, "Rnd_1": 1.0, "Rnd_2": 1.0, "Rnd_3": "1", "Notes": null }, "geometry": { "type": "Point", "coordinates": [ -122.39028841, 37.78052567 ] } }
+
+]
+}
+
+var end = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 2,
+        "name": "San Jose Diridon Caltrain Station",
+        "dockcount": 27,
+        "landmark": "San Jose",
+        "installation": "8/6/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.901782,
+          37.329732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 3,
+        "name": "San Jose Civic Center",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "8/5/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.888979,
+          37.330698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 4,
+        "name": "Santa Clara at Almaden",
+        "dockcount": 11,
+        "landmark": "San Jose",
+        "installation": "8/6/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.894902,
+          37.333988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 5,
+        "name": "Adobe on Almaden",
+        "dockcount": 19,
+        "landmark": "San Jose",
+        "installation": "8/5/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8932,
+          37.331415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 6,
+        "name": "San Pedro Square",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "8/7/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.894074,
+          37.336721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 7,
+        "name": "Paseo de San Antonio",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "8/7/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.886943,
+          37.333798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 8,
+        "name": "San Salvador at 1st",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "8/5/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.885831,
+          37.330165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 9,
+        "name": "Japantown",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "8/5/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.894715,
+          37.348742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 10,
+        "name": "San Jose City Hall",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "8/6/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.886995,
+          37.337391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 11,
+        "name": "MLK Library",
+        "dockcount": 19,
+        "landmark": "San Jose",
+        "installation": "8/6/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.88566,
+          37.335885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 12,
+        "name": "SJSU 4th at San Carlos",
+        "dockcount": 19,
+        "landmark": "San Jose",
+        "installation": "8/7/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.883891,
+          37.332808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 13,
+        "name": "St James Park",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "8/6/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.889937,
+          37.339301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 14,
+        "name": "Arena Green / SAP Center",
+        "dockcount": 19,
+        "landmark": "San Jose",
+        "installation": "8/5/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.900084,
+          37.332692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 16,
+        "name": "SJSU - San Salvador at 9th",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "8/7/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.877349,
+          37.333955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 21,
+        "name": "Franklin at Maple",
+        "dockcount": 15,
+        "landmark": "Redwood City",
+        "installation": "8/12/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.226904,
+          37.481758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 22,
+        "name": "Redwood City Caltrain Station",
+        "dockcount": 25,
+        "landmark": "Redwood City",
+        "installation": "8/15/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.232089,
+          37.486078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 23,
+        "name": "San Mateo County Center",
+        "dockcount": 15,
+        "landmark": "Redwood City",
+        "installation": "8/15/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.231061,
+          37.488501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 24,
+        "name": "Redwood City Public Library",
+        "dockcount": 15,
+        "landmark": "Redwood City",
+        "installation": "8/12/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.227424,
+          37.484219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 25,
+        "name": "Broadway at Main",
+        "dockcount": 15,
+        "landmark": "Redwood City",
+        "installation": "8/12/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.225551,
+          37.486725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 26,
+        "name": "Redwood City Medical Center",
+        "dockcount": 15,
+        "landmark": "Redwood City",
+        "installation": "8/12/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.223492,
+          37.487682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 27,
+        "name": "Mountain View City Hall",
+        "dockcount": 15,
+        "landmark": "Mountain View",
+        "installation": "8/16/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.081896,
+          37.389218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 28,
+        "name": "Mountain View Caltrain Station",
+        "dockcount": 23,
+        "landmark": "Mountain View",
+        "installation": "8/15/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.076713,
+          37.394358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 29,
+        "name": "San Antonio Caltrain Station",
+        "dockcount": 23,
+        "landmark": "Mountain View",
+        "installation": "8/15/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.106758,
+          37.40694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 30,
+        "name": "Evelyn Park and Ride",
+        "dockcount": 15,
+        "landmark": "Mountain View",
+        "installation": "8/16/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.066553,
+          37.390277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 31,
+        "name": "San Antonio Shopping Center",
+        "dockcount": 15,
+        "landmark": "Mountain View",
+        "installation": "12/31/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.108338,
+          37.400443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 32,
+        "name": "Castro Street and El Camino Real",
+        "dockcount": 11,
+        "landmark": "Mountain View",
+        "installation": "12/31/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.083678,
+          37.385956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 33,
+        "name": "Rengstorff Avenue / California Street",
+        "dockcount": 15,
+        "landmark": "Mountain View",
+        "installation": "8/16/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.099076,
+          37.400241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 34,
+        "name": "Palo Alto Caltrain Station",
+        "dockcount": 23,
+        "landmark": "Palo Alto",
+        "installation": "8/14/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.164759,
+          37.443988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 35,
+        "name": "University and Emerson",
+        "dockcount": 11,
+        "landmark": "Palo Alto",
+        "installation": "8/15/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.163093,
+          37.444521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 36,
+        "name": "California Ave Caltrain Station",
+        "dockcount": 15,
+        "landmark": "Palo Alto",
+        "installation": "8/14/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.142805,
+          37.429082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 37,
+        "name": "Cowper at University",
+        "dockcount": 11,
+        "landmark": "Palo Alto",
+        "installation": "8/14/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.159504,
+          37.448598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 38,
+        "name": "Park at Olive",
+        "dockcount": 15,
+        "landmark": "Palo Alto",
+        "installation": "8/14/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.137778,
+          37.425684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 41,
+        "name": "Clay at Battery",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/19/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.39997,
+          37.795001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 42,
+        "name": "Davis at Jackson",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/19/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.398436,
+          37.79728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 45,
+        "name": "Commercial at Montgomery",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/19/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.402923,
+          37.794231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 46,
+        "name": "Washington at Kearney",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/19/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.404767,
+          37.795425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 47,
+        "name": "Post at Kearney",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/19/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.403452,
+          37.788975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 48,
+        "name": "Embarcadero at Vallejo",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/19/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.398525,
+          37.799953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 49,
+        "name": "Spear at Folsom",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/20/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.390264,
+          37.789625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 50,
+        "name": "Harry Bridges Plaza (Ferry Building)",
+        "dockcount": 23,
+        "landmark": "San Francisco",
+        "installation": "8/20/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.394203,
+          37.795392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 51,
+        "name": "Embarcadero at Folsom",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/20/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.391034,
+          37.791464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 53,
+        "name": "Powell Street BART",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/25/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.408433,
+          37.783871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 54,
+        "name": "Embarcadero at Bryant",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/20/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.388013,
+          37.787152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 55,
+        "name": "Temporary Transbay Terminal (Howard at Beale)",
+        "dockcount": 23,
+        "landmark": "San Francisco",
+        "installation": "8/20/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.394643,
+          37.789756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 56,
+        "name": "Beale at Market",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/20/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.397086,
+          37.792251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 57,
+        "name": "5th at Howard",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/21/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.405127,
+          37.781752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 58,
+        "name": "San Francisco City Hall",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/21/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.418235,
+          37.77865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 59,
+        "name": "Golden Gate at Polk",
+        "dockcount": 23,
+        "landmark": "San Francisco",
+        "installation": "8/21/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.418603,
+          37.781332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 60,
+        "name": "Embarcadero at Sansome",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/21/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.403234,
+          37.80477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 61,
+        "name": "2nd at Townsend",
+        "dockcount": 27,
+        "landmark": "San Francisco",
+        "installation": "8/22/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.390288,
+          37.780526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 62,
+        "name": "2nd at Folsom",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/22/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.396236,
+          37.785299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 63,
+        "name": "Howard at 2nd",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/22/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.398108,
+          37.786978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 64,
+        "name": "2nd at South Park",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/22/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.392738,
+          37.782259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 65,
+        "name": "Townsend at 7th",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/22/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.402717,
+          37.771058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 66,
+        "name": "South Van Ness at Market",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/23/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.418954,
+          37.774814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 67,
+        "name": "Market at 10th",
+        "dockcount": 27,
+        "landmark": "San Francisco",
+        "installation": "8/23/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.417385,
+          37.776619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 68,
+        "name": "Yerba Buena Center of the Arts (3rd @ Howard)",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/23/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.401014,
+          37.784878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 69,
+        "name": "San Francisco Caltrain 2 (330 Townsend)",
+        "dockcount": 23,
+        "landmark": "San Francisco",
+        "installation": "8/23/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.39607,
+          37.776377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 70,
+        "name": "San Francisco Caltrain (Townsend at 4th)",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/23/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.395569,
+          37.776317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 71,
+        "name": "Powell at Post (Union Square)",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/23/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.408499,
+          37.788446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 72,
+        "name": "Civic Center BART (7th at Market)",
+        "dockcount": 23,
+        "landmark": "San Francisco",
+        "installation": "8/23/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.412919,
+          37.780356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 73,
+        "name": "Grant Avenue at Columbus Avenue",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "8/21/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.407245,
+          37.798522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 74,
+        "name": "Steuart at Market",
+        "dockcount": 23,
+        "landmark": "San Francisco",
+        "installation": "8/25/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.394434,
+          37.794139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 75,
+        "name": "Mechanics Plaza (Market at Battery)",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/25/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.399051,
+          37.7913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 76,
+        "name": "Market at 4th",
+        "dockcount": 19,
+        "landmark": "San Francisco",
+        "installation": "8/25/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.404966,
+          37.786305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 77,
+        "name": "Market at Sansome",
+        "dockcount": 27,
+        "landmark": "San Francisco",
+        "installation": "8/25/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.400811,
+          37.789625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 80,
+        "name": "San Jose Government Center",
+        "dockcount": 15,
+        "landmark": "San Jose",
+        "installation": "12/31/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.905733,
+          37.352601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 82,
+        "name": "Broadway St at Battery St",
+        "dockcount": 15,
+        "landmark": "San Francisco",
+        "installation": "1/22/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.400862,
+          37.798541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 83,
+        "name": "Mezes Park",
+        "dockcount": 15,
+        "landmark": "Redwood City",
+        "installation": "2/20/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.236234,
+          37.491269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": 84,
+        "name": "rrrrra ra",
+        "dockcount": 15,
+        "landmark": "Redwood City",
+        "installation": "2/20/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.895617,
+          37.342725
+        ]
+      }
+    }
+  ]
+}

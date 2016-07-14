@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Jeff Paterson" />
+	<meta name="description" content="SF Bay Area Bike Share Data Project 2016">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>SF Bay Area BikeShare 2016</title>
+	
+	<!-- Royal Preloader CSS -->
+	<link href="css/royal_preloader.css" rel="stylesheet">
+
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<!-- Parallax File -->
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+
+	<!-- Royal Preloader -->
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+		Royal_Preloader.config({
+		    mode:           'number',
+		    showProgress:   true,
+		    background:     '#1d1d1d'
+		});
+	</script>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/ionicons.min.css" rel="stylesheet">
+	<link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/logoiconfont.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" title="main-css">
+	<link href="css/blue.css" rel="stylesheet" title="blue">
+</head>
+
+<body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
+	<div id="royal_preloader"></div>
+
+	<!-- Begin Header -->
+	<header>
+		<!-- Begin Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand scroll-link" href="#home" data-id="home"><span class="ion-android-bicycle logo"></span></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" data-id="home" class="scroll-link">Home</a></li>
+							<li><a href="#liveview" data-id="liveview" class="scroll-link">Live view</a></li>
+							<li><a href="#map" data-id="map" class="scroll-link">Map</a></li>
+							<li><a href="#data" data-id="data" class="scroll-link">Data</a></li>
+							<li><a href="#ourcount" data-id="ourcount" class="scroll-link">Facts</a></li>
+							<li><a href="#about" data-id="about" class="scroll-link">About</a></li>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End Navigation -->
+	</header>
+	<!-- End Header -->
+
+	<!-- Begin Jumbotron -->
+	<div class="jumbotron jumbotron-register" id="home">
+
+		<video id="video-background" preload muted autoplay loop>
+   	<source src="videos/bikeshare2.mp4" type="video/mp4">
+  	</video>
+  
+		<div class="container center-vertically-holder">
+			<div class="center-vertically">
+				<div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+					<h1 class="scaleReveal">				
+					<span class="ion-android-bicycle big-logo"></span>
+						<h1>SF BIKESHARE 2016</h1>
+					
+					<hr>
+					<h2>By Jeff Paterson</h2>
+						<div class="scroll-indicator rotateBottomReveal">
+							<span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+						</div>
+					</a>
+				</div><!-- /.column -->
+			</div><!-- /.vertical center -->
+		</div><!-- /.container -->
+	</div>
+	<!-- End Jumbotron -->
+
+	<!-- Begin Intro -->
+	<section id="liveview">
+
+		<!-- Begin Hello Intro -->
+		<div id="hello-intro" class="pt60 pb60">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-sm-3">
+						<h2 class="no-margin rotateLeftReveal">LIVE VIEW</h2>
+					</div>
+					<div class="col-lg-10 col-sm-9 mt30-xs">
+						<h3 class="no-margin rightReveal"><strong>Here's a look at the live status of every San Francisco BikeShare station, including bikes available, capacity, and number of open racks. Free spaces are important, as you can't return a bike to a rack that is full.</strong></h3>
+					</div>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.div -->
+		<!-- End Hello Intro -->
+
+	</section><!-- /.section -->
+	<!-- End Intro -->
+
+		<!-- Begin Map -->
+	<div id="map"></div>
+	<!-- End Map -->
+
+	<!-- Begin Services -->
+	<section id="data" class="background2 section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 section-title text-center">
+					<h2>Data</h2>
+					<span class="section-divider"></span>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+
+			<div class="row">
+				<!-- Item 1 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="services-box leftReveal">
+						<span class="services-badge badge">Interactive</span>
+						<span class="pe-7s-loop services-icon"></span>
+						<h3 class="service-name">Station connections</h3>
+						<p class="text-small">Station connections..</p>
+						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item1-services">Visual</button>
+					</div>
+				</div><!-- /.column -->	
+			    <!-- Item 1 Modal -->
+				<div class="modal fade" id="item1-services" tabindex="-1" role="dialog">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+				                </button>
+				                <span class="pe-7s-loop services-icon-2"></span>
+				                <h4 class="service-title">Station connections</h4>
+				            </div>
+				            <div class="modal-body">
+				                <p>Vizualization of station connection data....</p>
+				                <a href="circle.html">Circle visual</a>
+				            </div>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<!-- Item 2 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
+					<div class="services-box topReveal">
+						<span class="services-badge badge">Interactive</span>
+						<span class="pe-7s-display1 services-icon"></span>
+						<h3 class="service-name">Data Viz</h3>
+						<p class="text-small">This will be another data visualization. Coming soon!</p>
+						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item2-services">Visual</button>
+					</div>
+				</div><!-- /.column -->	
+			    <!-- Item 2 Modal -->
+				<div class="modal fade" id="item2-services" tabindex="-1" role="dialog">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+				                </button>
+				                <span class="pe-7s-display1 services-icon-2"></span>
+				                <h4 class="service-title">Data Viz</h4>
+				            </div>
+				            <div class="modal-body">
+				                <p>This will be another data viz. Coming soon!</p>
+				            </div>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<!-- Item 3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
+					<div class="services-box rightReveal">
+						<span class="pe-7s-graph services-icon"></span>
+						<h3 class="service-name">Data Viz</h3>
+						<p class="text-small">This will be another data vizualization. Coming soon!</p>
+						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item3-services">Visual</button>
+					</div>
+				</div><!-- /.column -->	
+			    <!-- Item 3 Modal -->
+				<div class="modal fade" id="item3-services" tabindex="-1" role="dialog">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+				                </button>
+				                <span class="pe-7s-graph services-icon-2"></span>
+				                <h4 class="service-title">Data Viz</h4>
+				            </div>
+				            <div class="modal-body">
+				                <p>This will be another data vizualization. Coming soon!</p>
+				            </div>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<!-- Item 4 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+					<div class="services-box leftReveal">
+						<span class="pe-7s-way services-icon"></span>
+						<h3 class="service-name">Suggested expansion</h3>
+						<p class="text-small">Crowdsourced heat map of suggested new locations to serve San Francisco, based on thousands of recommendations.</p>
+						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item4-services">Map</button>
+					</div>
+				</div><!-- /.column -->	
+			    <!-- Item 4 Modal -->
+				<div class="modal fade" id="item4-services" tabindex="-1" role="dialog">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+				                </button>
+				                <span class="pe-7s-way services-icon-2"></span>
+				                <h4 class="service-title">Suggested expansion</h4>
+				            </div>
+				            <div class="modal-body">
+				                <p>Crowdsourced heat map of suggested new locations to serve San Francisco, based on thousands of recommendations. Select for larger image.</p>
+												<a href="images/heat-map.jpg">
+				                <img src="images/heat-map.jpg" alt="heatmap" width="500"></a>
+				            </div>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<!-- Item 5 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+					<div class="services-box bottomReveal">
+						<span class="pe-7s-map services-icon"></span>
+						<h3 class="service-name">Suitability Map</h3>
+						<p class="text-small">Studies have shown that the suitability of the program...</p>
+						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item5-services">Map</button>
+					</div>
+				</div><!-- /.column -->	
+			    <!-- Item 5 Modal -->
+				<div class="modal fade" id="item5-services" tabindex="-1" role="dialog">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+				                </button>
+				                <span class="pe-7s-map services-icon-2"></span>
+				                <h4 class="service-title">Suitability Map</h4>
+				            </div>
+				            <div class="modal-body">
+				                <p>Studies have shown...</p>
+												<a href="images/suitability2.png">
+				                <img src="images/suitability2.png" alt="suitability map" width="500"></a>
+				            </div>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<!-- Item 6 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+					<div class="services-box rightReveal">
+						<span class="pe-7s-info services-icon"></span>
+						<h3 class="service-name">Using BikeShare</h3>
+						<p class="text-small">How to use the system, including pricing information, and what to avoid.</p>
+						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item6-services">Info</button>
+					</div>
+				</div><!-- /.column -->	
+			    <!-- Item 6 Modal -->
+				<div class="modal fade" id="item6-services" tabindex="-1" role="dialog">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+				                </button>
+				                <span class="pe-7s-info services-icon-2"></span>
+				                <h4 class="service-title">Using BikeShare</h4>
+				            </div>
+				            <div class="modal-body">
+				            		<img src="images/bike-trans.png" width="250" alt="bike" align="right">
+				                <p>How to use the SF Bay Area BikeShare system</p>
+				                <h5 class="heading-1 modal-heading mb20">Why use</h5>
+				                <p>Because it is awesome...</p>
+				                <h5 class="heading-1 modal-heading mb20">Pricing</h5>
+				                <p>$9 day membership allows for unlimited rides of less than 30 minutes each...</p>
+				                <h5 class="heading-1 modal-heading mb20">Beware</h5>
+				                <p class="no-margin-bottom">Do not keep the bike for longer than 30 minutes...</p>
+				            </div>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+	<!-- End Services -->
+	
+	<!-- Begin Our Count -->
+	<section id="ourcount" class="section-padding parallax-window" data-parallax="scroll" data-image-src="images/woman-dark.jpg">
+		<div class="container">
+			<div class="row mb30">
+				<div class="section-title col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+					<h2>The Facts</h2>
+					<span class="section-divider mb15"></span>
+					<p class="no-margin">Facts based on the SF Bay Area BikeShare 2015 data set.</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-sm-6 col-md-3 item leftReveal">
+					<div class="circle-hold">
+                        <i class="ion-arrow-swap"></i>
+                    </div>
+                    <h2 class="timer mb5" data-from="1" data-to="324321" data-refresh-interval="20">1</h2>
+                    <p class="no-margin">Number of trips</p>
+				</div><!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs rightReveal">
+					<div class="circle-hold">
+                        <i class="ion-map"></i>
+                    </div>
+                    <h2 class="timer mb5" data-from="1" data-to="1.9" data-refresh-interval="20">1</h2>
+                    <p class="no-margin">Avg distance</p>
+				</div><!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm leftReveal">
+					<div class="circle-hold">
+                        <i class="ion-clock"></i>
+                    </div>
+                    <h2 class="timer mb5" data-from="1" data-to="17.6" data-refresh-interval="20">1</h2>
+                    <p class="no-margin">Avg durration</p>
+				</div><!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm rightReveal">
+					<div class="circle-hold">
+                        <i class="ion-gear-a"></i>
+                    </div>
+                    <h2 class="timer mb5" data-from="1" data-to="700" data-refresh-interval="20">1</h2>
+                    <p class="no-margin">Number of bikes</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+	<!-- End Our Count -->
+
+<!-- Begin About -->
+	<section id="about" class="background1 section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 section-title text-center">
+					<h2>About</h2>
+					<span class="section-divider"></span>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+			<div class="row mb15">
+				<div class="col-sm-5 leftReveal">
+					<h5 class="heading-1 mb20">Our Trade</h5>
+					<h3 class="mb15 no-margin-top">Designing, Developing, and <br>Innovating for people like you...</h3>
+					<p class="no-margin text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tristiq enim. Integer eu <strong>neque</strong> arcu. Aenean sed odio nibh. Cras imperdiet, arcu eget dictum vestibulum elit.</p>
+				</div><!-- /.column -->
+				<div class="col-sm-7 mt30-xs rightReveal">
+					<h5 class="heading-1 mb20">How we started it</h5>
+					<span class="ion-android-bicycle logo-about"></span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, imperdiet eget sem at, pellentesque cursus elit. Etiam id ante et elit interdum sollicitudin. Cras imperdiet, arcu eget dictum vestibulum elit.</p>
+					<p>Curabitur egestas interdum ex, sed commodo ipsum consectetur vitae. Nulla auctor ante erat. Class aptent taciti sociosqu nostra enean sed.</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+			<div class="row mb30">
+				<div class="col-sm-9 leftReveal">
+					<h5 class="heading-1 mb20">Why?</h5>
+					<p class="lead no-margin">Lorem ipsum dolor sit amet, consectetur adipicing elit. tristique enim. Integer euef neque arcu. Aenean sed odio nibh. <strong>Cras imperdiet</strong>, arcu eget dictum vestibulumizor. Lorem ipsil dolor sit amet, consectetur adipiscing elit.</p>
+				</div><!-- /.column -->
+				<div class="col-sm-3 mt30-xs rightReveal">
+					<h5 class="heading-1 mb20">Quote</h5>
+					<p class="no-margin text-small"><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus quibusdam."</i></p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-lg-7 col-sm-5 bottomReveal">
+					
+				</div><!-- /.column -->	
+				<div class="col-lg-5 col-sm-7 mt10 rotateLeftReveal">
+					<div id="about-carousel" class="basic-carousel carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#about-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#about-carousel" data-slide-to="1"></li>
+							<li data-target="#about-carousel" data-slide-to="2"></li>
+							<li data-target="#about-carousel" data-slide-to="3"></li>
+							<li data-target="#about-carousel" data-slide-to="4"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="images/dude.jpg" alt="..." class="img-responsive">
+							</div>
+							<div class="item">
+								<img src="images/feet.jpg" alt="..." class="img-responsive">
+							</div>
+							<div class="item">
+								<img src="images/girls.jpg" alt="..." class="img-responsive">
+							</div>
+								<div class="item">
+								<img src="images/group.jpg" alt="..." class="img-responsive">
+							</div>
+								<div class="item">
+								<img src="images/sf-bikes.jpg" alt="..." class="img-responsive">
+							</div>
+						</div>
+					</div>
+				</div><!-- /.column -->	
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+	<!-- End About -->
+
+
+	<!-- Begin Footer -->
+	<footer class="footer-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<span class="ion-android-bicycle logo"></span>
+					<h2 class="theme-title">SF BikeShare 2016</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-small text-center">
+					<hr>
+					<button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Up</button>
+					<p class="no-margin">&copy; Jeff Paterson</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</footer><!-- /.footer -->
+	<!-- Begin Footer -->
+
+	<!-- Javascript Files -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async defer></script>
+    <script type="text/javascript">
+		/* ---- Google Maps ---- */
+        function initMap() {
+            var mapOptions = {
+                zoom: 15,
+				zoomControl: true,
+				scaleControl: true,
+				scrollwheel: false,
+				disableDoubleClickZoom: true,
+                center: new google.maps.LatLng(37.7912, -122.4063), 
+                //37.7749° N, 122.4194° W sf
+
+                //40.7128° N, 74.0059° W
+                // New York
+                // styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+            };
+            var mapElement = document.getElementById('map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            // var marker = new google.maps.Marker({
+            //     position: new google.maps.LatLng(40.6700, -73.9400),
+            //     map: map,
+            //     title: 'SF BikeShare'
+            // });
+        }
+    </script>
+	<script type="text/javascript" src="js/jquery.mixitup.js"></script> 
+	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>  
+	<script type="text/javascript">
+		/* ---- Counter (our count) ---- */
+		$('#ourcount').one('inview', function(event, isInView) {
+			if (isInView) {
+				$('.timer').countTo({speed: 3000});
+			}
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+	
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
