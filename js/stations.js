@@ -4,7 +4,6 @@
 	
 	$(function()
 	{
-		
 		var show_live_data = true;
 		var show_planned_data = true;
 		var planned_phases_to_show = [2]; // this is an array. use [1,2] for more
