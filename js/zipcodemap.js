@@ -1,11 +1,17 @@
+var colorUsers = {subscriber: "#0070cd", customer: "#bae4bc", total: "#7bccc4", extra:"#d1d1d1", alert: "#e63737", highlight:"#ff9c27"},
+    colorFact = ["#9fc1ff","#bebada","#0072b9","#AF1E2C","#F2552C","#05535D","#fccde5","#d9d9d9","#bc80bd","#ccebc5"],
+    colorCities = ["#f0f9e8","#bae4bc","#7bccc4","#43a2ca","#0070cd"],
+    colorHeat = ["#f7fcf0","#e0f3db","#ccebc5","#a8ddb5","#7bccc4","#4eb3d3","#2b8cbe","#0868ac","#084081","#041a40"];
 
 // Create the Google Map…
-var map = new google.maps.Map(d3.select("#map-here").node(), {
-  zoom: 10,
-  center: new google.maps.LatLng(37.7, -122.3), // center on SF bay 
-  mapTypeId: google.maps.MapTypeId.MAP
-});
- 
+function initMap() {
+  var map = new google.maps.Map(d3.select("#map-here").node(), {
+    zoom: 10,
+    center: new google.maps.LatLng(37.7, -122.3), // center on SF bay 
+    mapTypeId: google.maps.MapTypeId.MAP
+  });
+
+
 var colors = ["#ffffcc","#ffeda0","#fed976","#feb24c","#fd8d3c","#fc4e2a","#e31a1c","#bd0026","#800026"];
 
 // Load the data. When the data comes back, create an overlay.
@@ -75,6 +81,7 @@ d3.csv("data/zipcode_rides.csv", function(data) {
 }); 
 
 
+
 d3.csv("data/bart.csv", function(data) {
   var overlay = new google.maps.OverlayView();
  
@@ -125,3 +132,5 @@ d3.csv("data/bart.csv", function(data) {
   // Bind our overlay to the map…
   overlay.setMap(map);
 });
+
+};
