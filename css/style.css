@@ -73,6 +73,10 @@ a:focus, a:hover {
     text-decoration: underline;
 }
 
+#title {
+    color: #8980fe;
+}
+
 .mini-hr {
     border-style: solid none;
     border-color: #424242;
@@ -990,7 +994,7 @@ ul.social-buttons li a:active {
 	height: 100%;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
+	color: #8980fe;
 	padding-top: 0;
 	padding-bottom: 0;
 	position: relative;
@@ -1029,7 +1033,7 @@ ul.social-buttons li a:active {
 }
 
 .jumbotron.jumbotron-main a {
-    color: #fff;
+    color: #8980fe;
 }
 
 .center-vertically {
@@ -1135,6 +1139,11 @@ ul.social-buttons li a:active {
 
 #hello-intro h3 strong {
 	font-weight: 300;
+}
+
+#map-info {
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 /* =Our Process

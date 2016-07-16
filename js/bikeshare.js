@@ -34,17 +34,18 @@ function updateBikeShareInfo() {
     $.getJSON( "bikeshare" + id+".json", 
         function( data ) {
             data.stationBeanList.forEach((station) => {
-                var markerColor = 'green';
+                var markerColor = "#8980fe";
                 if (station.availableBikes < 6 && station.availableBikes>0){
                     markerColor = 'yellow'
                 } else if (station.availableBikes < 1) {
                     markerColor = 'red';
                 }
-                var stationContent = "<strong>" + 
+                var stationContent = "<div id='map-info'><strong>" + 
                         station.stationName + "</strong><br/>Available Bikes: <strong>" + 
                         station.availableBikes + "</strong><br/> Open racks: <strong>"+
-                        station.availableDocks + "</strong><br/> Station "+ 
-                        station.statusValue;
+                        station.availableDocks + "</strong><br/> Total capacity: " +
+                        station.totalDocks + "<br/> Station "+ 
+                        station.statusValue+"</div>";
 
                  var infowindow = new google.maps.InfoWindow({
                     content: stationContent
