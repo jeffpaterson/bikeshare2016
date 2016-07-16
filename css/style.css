@@ -1884,7 +1884,7 @@ span.portfolio-hover a {
 
 .map-responsive {
     overflow: hidden;
-    padding-bottom: 550px;
+    padding-bottom: 650px;
     position: relative;
     height: 0;
 }
@@ -1892,7 +1892,7 @@ span.portfolio-hover a {
 .map-responsive iframe {
     left: 0;
     top: 0;
-    height: 550px;
+    height: 650px;
     width: 100%;
     position: absolute;
 }
@@ -1902,7 +1902,7 @@ span.portfolio-hover a {
 }
 
 #map { 
-    height: 550px;
+    height: 650px;
 }
 
 /* =Footer

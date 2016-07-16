@@ -79,9 +79,9 @@
 	<!-- Begin Jumbotron -->
 	<div class="jumbotron jumbotron-register" id="home">
 
-		<video id="video-background" preload muted autoplay loop>
-   	<source src="videos/bikeshare2.mp4" type="video/mp4">
-  	</video>
+		<!-- <video id="video-background" preload muted autoplay loop> -->
+   	<!-- <source src="videos/bikeshare2.mp4" type="video/mp4">
+  	</video> -->
   
 		<div class="container center-vertically-holder">
 			<div class="center-vertically">
@@ -107,25 +107,44 @@
 	<section id="liveview">
 
 		<!-- Begin Hello Intro -->
-		<div id="hello-intro" class="pt60 pb60">
+		<div id="hello-intro" class="pt60 pb20">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-2 col-sm-3">
 						<h2 class="no-margin rotateLeftReveal">LIVE VIEW</h2>
 					</div>
 					<div class="col-lg-10 col-sm-9 mt30-xs">
-						<h3 class="no-margin rightReveal"><strong>Here's a look at the live status of every San Francisco BikeShare station, including bikes available, capacity, and number of open racks. Free spaces are important, as you can't return a bike to a rack that is full.</strong></h3>
+						<h3 class="no-margin rightReveal"><strong>Here's a look at the live status of every Bay Area BikeShare station, including bikes available, capacity, and number of open racks. Open racks are important, as you can't return a bike to a full kiosk.</strong></h3>
 					</div>
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</div><!-- /.div -->
 		<!-- End Hello Intro -->
-
 	</section><!-- /.section -->
 	<!-- End Intro -->
 
 		<!-- Begin Map -->
-	<div id="map"></div>
+		<div align="center">
+			<button type="button" class="btn btn-primary bikeshare-area" id="san-jose">San Jose</button>
+			<span class="ion-ios-gear-outline"></span>  
+			<button type="button" class="btn btn-primary bikeshare-area" id="palo-alto">Palo Alto</button>
+			<span class="ion-ios-gear-outline"></span>  
+			<button type="button" class="btn btn-primary bikeshare-area" id="mt-view">Mountain View</button>
+			<span class="ion-ios-gear-outline"></span>  
+			<button type="button" class="btn btn-primary bikeshare-area" id="sf">San Francisco</button>
+		</div>
+	
+		<div id="map"></div>
+	
+		<div align="center">
+			<button type="button" class="btn btn-primary bikeshare-area" id="san-jose">San Jose</button>
+			<span class="ion-ios-gear-outline"></span>  
+			<button type="button" class="btn btn-primary bikeshare-area" id="palo-alto">Palo Alto</button>
+			<span class="ion-ios-gear-outline"></span>  
+			<button type="button" class="btn btn-primary bikeshare-area" id="mt-view">Mountain View</button>
+			<span class="ion-ios-gear-outline"></span>  
+			<button type="button" class="btn btn-primary bikeshare-area" id="sf">San Francisco</button>
+		</div>
 	<!-- End Map -->
 
 	<!-- Begin Services -->
@@ -543,25 +562,16 @@
 
 	<!-- Javascript Files -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bikeshare.js"></script>
+	
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJk2ywVKdQpPRzqyJrnNIxQPM1B5AQrCg&callback=initMap" async defer></script>
-    <script type="text/javascript">
-		/* ---- Google Maps ---- */
-        function initMap() {
-            var mapOptions = {
-                zoom: 15,
-				zoomControl: true,
-				scaleControl: true,
-				scrollwheel: false,
-				disableDoubleClickZoom: true,
-                center: new google.maps.LatLng(37.7912, -122.4063), 
-                            };
-            var mapElement = document.getElementById('map');
-            var map = new google.maps.Map(mapElement, mapOptions);
-        }
-    </script>
+
 	<script type="text/javascript" src="js/jquery.mixitup.js"></script> 
 	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
 	<script type="text/javascript" src="js/jquery.countTo.js"></script>  
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+	
 	<script type="text/javascript">
 		/* ---- Counter (our count) ---- */
 		$('#ourcount').one('inview', function(event, isInView) {
@@ -570,8 +580,6 @@
 			}
 		});
 	</script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
 	
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
