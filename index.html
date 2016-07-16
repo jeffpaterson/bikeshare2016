@@ -33,7 +33,6 @@
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/logoiconfont.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" title="main-css">
-	<link href="css/blue.css" rel="stylesheet" title="blue">
 </head>
 
 <body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
@@ -61,11 +60,33 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#home" data-id="home" class="scroll-link">Home</a></li>
 							<li><a href="#liveview" data-id="liveview" class="scroll-link">Live view</a></li>
-							<li><a href="#map" data-id="map" class="scroll-link">Map</a></li>
+
+							<li class="dropdown">
+								<a href="#map" data-id="map" class="dropdown-toggle scroll-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Map<span class="ion-chevron-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#map" data-id="map" class="bikeshare-area scroll-link" id="san-jose">San Jose</a></li>
+									<li><a href="#map" data-id="map" class="bikeshare-area scroll-link" id="palo-alto">Palo Alto</a></li>
+									<li><a href="#map" data-id="map" class="bikeshare-area scroll-link" id="mt-view">Moutain View</a></li>
+									<li><a href="#map" data-id="map" class="bikeshare-area scroll-link" id="sf">San Francisco</a></li>
+									<li><a href="#map" data-id="map" class="bikeshare-area scroll-link" id="region">Bay Area</a></li>
+								</ul>
+							</li>
 							<li><a href="#data" data-id="data" class="scroll-link">Data</a></li>
 							<li><a href="#ourcount" data-id="ourcount" class="scroll-link">Facts</a></li>
 							<li><a href="#about" data-id="about" class="scroll-link">About</a></li>
-							<li><a href="#contact" data-id="contact" class="scroll-link">Contact</a></li>
+							<li class="dropdown">
+								<a href="#contact" data-id="contact" class="dropdown-toggle scroll-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="ion-chevron-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#contact" class="scroll-link"><span class="ion-social-google"></span> jefpaterson@gmail.com</a></li>
+									<li><a href="https://www.linkedin.com/in/jeff-paterson-164837118"><span class="ion-social-linkedin"></span> LinkedIn Profile</a></li>
+									<li><a href="https://github.com/jeffpaterson">
+									<span class="ion-social-github"></span> GitHub Profile</a></li>
+									<li><a href="http://jeffpaterson.net">
+									<span class="ion-earth"></span> jeffpaterson.net</a></li>
+								</ul>
+							</li>
+
+
 							</li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
@@ -79,9 +100,9 @@
 	<!-- Begin Jumbotron -->
 	<div class="jumbotron jumbotron-register" id="home">
 
-		<video id="video-background" preload muted autoplay loop>
+	<!-- 	<video id="video-background" preload muted autoplay loop>
    	<source src="videos/bikeshare2.mp4" type="video/mp4">
-  	</video>
+  	</video> -->
   
 		<div class="container center-vertically-holder">
 			<div class="center-vertically">
@@ -132,6 +153,8 @@
 			<button type="button" class="btn btn-primary bikeshare-area" id="mt-view">Mountain View</button>
 			<span class="ion-ios-gear-outline"></span>  
 			<button type="button" class="btn btn-primary bikeshare-area" id="sf">San Francisco</button>
+			<span class="ion-ios-gear-outline"></span>  
+			<button type="button" class="btn btn-primary bikeshare-area" id="region">Bay Area</button>
 		</div>
 	
 		<div id="map"></div>
@@ -144,6 +167,8 @@
 			<button type="button" class="btn btn-primary bikeshare-area" id="mt-view">Mountain View</button>
 			<span class="ion-ios-gear-outline"></span>  
 			<button type="button" class="btn btn-primary bikeshare-area" id="sf">San Francisco</button>
+			<span class="ion-ios-gear-outline"></span>  
+			<button type="button" class="btn btn-primary bikeshare-area" id="region">Bay Area</button>
 		</div>
 	<!-- End Map -->
 
@@ -190,7 +215,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
 					<div class="services-box topReveal">
 						<span class="services-badge badge">Interactive</span>
-						<span class="pe-7s-display1 services-icon"></span>
+						<span class="pe-7s-graph services-icon"></span>
 						<h3 class="service-name">Users</h3>
 						<p class="text-small">An interactive map of the home zipcodes of SF Bay Area BikeShare users, along with additional statistics.</p>
 						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item2-services">Visual</button>
@@ -203,7 +228,7 @@
 				            <div class="modal-header">
 				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
 				                </button>
-				                <span class="pe-7s-display1 services-icon-2"></span>
+				                <span class="pe-7s-graph services-icon-2"></span>
 				                <h4 class="service-title">Users</h4>
 				            </div>
 				            <div class="modal-body">
@@ -217,10 +242,10 @@
 				<!-- Item 3 -->
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
 					<div class="services-box rightReveal">
-						<span class="pe-7s-graph services-icon"></span>
-						<h3 class="service-name">Data Viz</h3>
-						<p class="text-small">This will be another data vizualization. Coming soon! ipsumlimsom	ipsum limsom ipsumlimsom ipsumli msom.		</p>
-						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item3-services">Visual</button>
+						<span class="pe-7s-bicycle services-icon"></span>
+						<h3 class="service-name">Bike Resources</h3>
+						<p class="text-small">An overview of other Bay Area cycling resources, including BikeLink lockers and commercial bike rental options.</p>
+						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item3-services">Info</button>
 					</div>
 				</div><!-- /.column -->	
 			    <!-- Item 3 Modal -->
@@ -230,11 +255,14 @@
 				            <div class="modal-header">
 				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
 				                </button>
-				                <span class="pe-7s-graph services-icon-2"></span>
-				                <h4 class="service-title">Data Viz</h4>
+				                <span class="pe-7s-bicycle services-icon-2"></span>
+				                <h4 class="service-title">Bike Resources</h4>
 				            </div>
 				            <div class="modal-body">
-				                <p>This will be another data vizualization. Coming soon!</p>
+				                <p>An overview of other Bay Area cycling resources, including BikeLink lockers and commercial bike rental options.</p>
+				                <img src="images/lockers.jpg" width="500" alt="bike lockers">
+				                <p><a href="https://www.bikelink.org/map">BikeLink locker locations</a></p>
+				                <p><a href="http://www.sftodo.com/bike-rental-san-francisco.html">Top SF bike rental outfits</a></p>
 				            </div>
 				        </div><!-- /.modal-content -->
 				    </div><!-- /.modal-dialog -->
@@ -340,7 +368,7 @@
 				<div class="section-title col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
 					<h2>The Facts</h2>
 					<span class="section-divider mb15"></span>
-					<p class="no-margin">Facts based on the SF Bay Area BikeShare 2015 data set.</p>
+					<p class="no-margin">Interesting facts from the SF Bay Area BikeShare 2015 data set.</p>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 			<div class="row">
@@ -355,7 +383,7 @@
 					<div class="circle-hold">
                         <i class="ion-map"></i>
                     </div>
-                    <h2 class="timer mb5" data-from="1" data-to="5934" data-refresh-interval="20">1</h2>
+                    <h2 class="timer mb5" data-from="1" data-to="3934" data-refresh-interval="20">1</h2>
                     <p class="no-margin">Avg distance (feet)</p>
 				</div><!-- /.column -->
 				<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm leftReveal">
@@ -443,37 +471,11 @@
 					<span class="section-divider"></span>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
+
 			<div class="row mb15">
+
 				<div class="col-sm-5 leftReveal">
-					<h5 class="heading-1 mb20">Expansion underway</h5>
-					<h3 class="mb15 no-margin-top">Bay Area BikeShare growing from 700 to 7000 bikes by 2017!</h3>
-					<p class="text-small">A ten-fold system expansion is currently underway. The first round of expansion stations are being finalized, and public workshops and feedback are being held for the following round of new stations.</p>
-					<p class="text-small"><i>Next public workshop:</i><br><strong>Monday, July 25, 2016</strong>, at 6pm.<br>African American Art + Culture Complex<br>762 Fulton St, San Francisco</p>
-
-
-				</div><!-- /.column -->
-				<div class="col-sm-7 mt30-xs rightReveal">
-					<h5 class="heading-1 mb20">This project</h5>
-					<span class="ion-android-bicycle logo-about"></span>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, imperdiet eget sem at, pellentesque cursus elit. Etiam id ante et elit interdum sollicitudin. Cras imperdiet, arcu eget dictum vestibulum elit.</p>
-					<p>Curabitur egestas interdum ex, sed commodo ipsum consectetur vitae. Nulla auctor ante erat. Class aptent taciti sociosqu nostra enean sed.</p>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-			<div class="row mb30">
-				<div class="col-sm-9 leftReveal">
-					<h5 class="heading-1 mb20">Why?</h5>
-					<p class="lead no-margin">Lorem ipsum dolor sit amet, consectetur adipicing elit. tristique enim. Integer euef neque arcu. Aenean sed odio nibh. <strong>Cras imperdiet</strong>, arcu eget dictum vestibulumizor. Lorem ipsil dolor sit amet, consectetur adipiscing elit.</p>
-				</div><!-- /.column -->
-				<div class="col-sm-3 mt30-xs rightReveal">
-					<h5 class="heading-1 mb20">Pro tip</h5>
-					<p class="no-margin text-small"><i>If you find a full station, insert your key at the kiosk and tap "Full Station" for an extra 15 minutes of riding time.</i></p>
-				</div><!-- /.column -->
-			</div><!-- /.row -->
-			<div class="row">
-				<div class="col-lg-7 col-sm-5 bottomReveal">
-					
-				</div><!-- /.column -->	
-				<div class="col-lg-5 col-sm-7 mt10 rotateLeftReveal">
+			
 					<div id="about-carousel" class="basic-carousel carousel slide" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
@@ -503,7 +505,27 @@
 							</div>
 						</div>
 					</div>
-				</div><!-- /.column -->	
+
+				</div><!-- /.column -->
+				
+				<div class="col-sm-7 mt30-xs rightReveal">
+					<h5 class="heading-1 mb20">The BikeShare System</h5>
+					<h2 class="mb15 no-margin-top">Bay Area BikeShare is growing by x10!</h2>
+					<p>A system expansion of the original 700 bike launched in the Fall of 2013, to over <strong>7,000 bikes</strong>, is currently underway. The new bikes and stations are expected to be in place by the end of 2017. In addition to signifcantly increasing in SF, the system is launching for the first time in Berkeley, Oakland, and Emeryville.</p>
+					<p class="text-small"><i>Next public hearing:</i><br><strong>Monday, July 25, 2016</strong>, at 6pm.<br>African American Art + Culture Complex<br>762 Fulton St, San Francisco</p>
+				</div><!-- /.column -->
+			
+			</div><!-- /.row -->
+			<div class="row mb30">
+				<div class="col-sm-9 leftReveal">
+					<h5 class="heading-1 mb20">Why this project?</h5>
+					<p class="lead no-margin">I’m excited by the growth of cycling infrastructure, such has separated bikeways, bike lanes, BikeLink bike lockers, and this regional BikeShare program. Hopefully, this application will contribute to awareness of this fantastic resource.
+</p>
+				</div><!-- /.column -->
+				<div class="col-sm-3 mt30-xs rightReveal">
+					<h5 class="heading-1 mb20">Pro tip</h5>
+					<p class="no-margin text-small"><i>If you find a full station, insert your key at the kiosk and tap "Full Station" for an extra 15 minutes of riding time.</i></p>
+				</div><!-- /.column -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section><!-- /.section -->
@@ -518,10 +540,13 @@
 				<div class="col-sm-8 col-sm-offset-2 text-center">
 					<span class="ion-android-bicycle logo"></span>
 					<h2 class="theme-title">SF BikeShare 2016</h2>
-					<h3>Jeff Paterson <a href="https://www.linkedin.com/in/jeff-paterson-164837118"><span class="ion-social-linkedin"></span></a><br>
-					jefpaterson@gmail.com<br>
-					<a href="http://jeffpaterson.net">www.jeffpaterson.net</a>
-					</h3>
+					<h3><a href="https://www.linkedin.com/in/jeff-paterson-164837118"><span class="ion-social-linkedin"></span></a>
+					 Jeff Paterson 
+					<a href="https://github.com/jeffpaterson"><span class="ion-social-github"></span></a><br>
+					jefpaterson@gmail.com</h3><p>
+					<a href="http://jeffpaterson.net">
+					<button type="button" class="btn btn-primary btn-lg"><span class="ion-earth"></span> jeffpaterson.net</button></a>
+					
 				</div>
 			</div>
 			<div class="row">
@@ -570,7 +595,7 @@
 	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
 	<script type="text/javascript" src="js/jquery.countTo.js"></script>  
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.js"></script>
 	
 	<script type="text/javascript">
 		/* ---- Counter (our count) ---- */
