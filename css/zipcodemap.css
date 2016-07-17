@@ -59,14 +59,14 @@ input[type=radio] {
   margin-left: 0.5rem;
 }
 .wrapper {
-  width: 800px;
+  width: 80%;
   padding: 24px 50px;
   margin: 0 auto 10px auto;
   -webkit-box-shadow: 0 20px 20px 4px #999999;
   box-shadow: 0 20px 20px 4px #999999;
   background-color: #fff;
   font-size: 12pt; 
-  font-family: 'Old Standard TT', serif;
+  font-family: serif;
 }
 .ILR {
   display: inline-block;

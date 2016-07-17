@@ -27,6 +27,7 @@
 	</script>
 
 	<!-- Stylesheets -->
+	<link href="css/circle.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/ionicons.min.css" rel="stylesheet">
 	<link href="css/pe-icon-7-stroke.css" rel="stylesheet">
@@ -34,6 +35,7 @@
 	<link href="css/logoiconfont.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" title="main-css">
 </head>
+
 
 <body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
 	<div id="royal_preloader"></div>
@@ -70,18 +72,24 @@
 									<li><a href="#map" data-id="map" class="bikeshare-area scroll-link" id="sf">San Francisco</a></li>
 									<li><a href="#map" data-id="map" class="bikeshare-area scroll-link" id="region">Bay Area</a></li>
 								</ul>
+							</li>		
+							<li class="dropdown">
+								<a href="#data" data-id="data" class="dropdown-toggle scroll-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data<span class="ion-chevron-down"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#circle-here" data-id="circle-here" class="scroll-link">Station Circle</a></li>
+									<li><a href="zipcodes.html" target='_blank'>User's zipcode</a></li>
+								</ul>
 							</li>
-							<li><a href="#data" data-id="data" class="scroll-link">Data</a></li>
 							<li><a href="#ourcount" data-id="ourcount" class="scroll-link">Facts</a></li>
 							<li><a href="#about" data-id="about" class="scroll-link">About</a></li>
 							<li class="dropdown">
 								<a href="#contact" data-id="contact" class="dropdown-toggle scroll-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="ion-chevron-down"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="#contact" class="scroll-link"><span class="ion-social-google"></span> jefpaterson@gmail.com</a></li>
-									<li><a href="https://www.linkedin.com/in/jeff-paterson-164837118"><span class="ion-social-linkedin"></span> LinkedIn Profile</a></li>
+									<li><a href="#contact" data-id="contact" class="scroll-link"><span class="ion-social-google"></span> jefpaterson@gmail.com</a></li>
+									<li><a href="https://www.linkedin.com/in/jeff-paterson-164837118" target='_blank' ><span class="ion-social-linkedin"></span> LinkedIn Profile</a></li>
 									<li><a href="https://github.com/jeffpaterson">
-									<span class="ion-social-github"></span> GitHub Profile</a></li>
-									<li><a href="http://jeffpaterson.net">
+									<span class="ion-social-github" target='_blank'></span> GitHub Profile</a></li>
+									<li><a href="http://jeffpaterson.net" target='_blank'>
 									<span class="ion-earth"></span> jeffpaterson.net</a></li>
 								</ul>
 							</li>
@@ -205,7 +213,8 @@
 				            </div>
 				            <div class="modal-body">
 				                <p>An interactive vizualization of station connection data, representing both were each ride began and ended.</p>
-				                <a href="circle.html">Circle visual</a>
+												<a href="circle.html"><img src="images/circle.jpg" alt="circle image"></a>
+				                <p><a href="circle.html">Full page view</a></p>
 				            </div>
 				        </div><!-- /.modal-content -->
 				    </div><!-- /.modal-dialog -->
@@ -216,7 +225,7 @@
 					<div class="services-box topReveal">
 						<span class="services-badge badge">Interactive</span>
 						<span class="pe-7s-graph services-icon"></span>
-						<h3 class="service-name">Users</h3>
+						<h3 class="service-name">User's home</h3>
 						<p class="text-small">An interactive map of the home zipcodes of SF Bay Area BikeShare users, along with additional statistics.</p>
 						<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item2-services">Visual</button>
 					</div>
@@ -229,11 +238,12 @@
 				                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
 				                </button>
 				                <span class="pe-7s-graph services-icon-2"></span>
-				                <h4 class="service-title">Users</h4>
+				                <h4 class="service-title">User's home</h4>
 				            </div>
 				            <div class="modal-body">
 				                <p>An interactive map of the home zipcodes of SF Bay Area BikeShare users.</p>
-				                <a href="zipcodes.html">Map users by home zipcode</a>
+				                <a href="zipcodes.html"><img src="images/zipmap.jpg" alt="zipcode map example"></a>
+				                <a href="zipcodes.html">Full page view</a>
 				            </div>
 				        </div><!-- /.modal-content -->
 				    </div><!-- /.modal-dialog -->
@@ -350,13 +360,17 @@
 				                <p>Because it is awesome...</p>
 				                <h5 class="heading-1 modal-heading mb20">Pricing</h5>
 				                <p>$9 day membership allows for unlimited rides of less than 30 minutes each. After the initial 30 minutes, it's an additional $4 for the following half hour, and another $7 for every half hour after that.</p>
-				                <h5 class="heading-1 modal-heading mb20">Beware</h5>
-				                <p class="no-margin-bottom">If you're looking for a bike to tour around town for more than an hour or so, you should definately look at commerical bike reantal options. A full day rental should cost less then $40, thereas a full day BikeShare would run well over $100.</p>
+				                <h5 class="heading-1 modal-heading mb20">BikeShare v. Renting</h5>
+				                <p class="no-margin-bottom">If you're looking for a bike to tour around town for more than an hour or so, you should definately look at commerical bike reantal options. A full day rental should cost less then $40, thereas a full day BikeShare would run well over $100!</p>
 				            </div>
 				        </div><!-- /.modal-content -->
 				    </div><!-- /.modal-dialog -->
 				</div><!-- /.modal -->
 			</div><!-- /.row -->
+
+		<div id="circle-here"></div>
+
+
 		</div><!-- /.container -->
 	</section><!-- /.section -->
 	<!-- End Services -->
@@ -519,8 +533,7 @@
 			<div class="row mb30">
 				<div class="col-sm-9 leftReveal">
 					<h5 class="heading-1 mb20">Why this project?</h5>
-					<p class="lead no-margin">I’m excited by the growth of cycling infrastructure, such has separated bikeways, bike lanes, BikeLink bike lockers, and this regional BikeShare program. Hopefully, this application will contribute to awareness of this fantastic resource.
-</p>
+					<p class="lead no-margin">It's my hope that this app will contribute to awareness of this fantastic resource. I’m excited by the growth of cycling infrastructure, such has separated bikeways, BikeLink lockers, and this growing regional BikeShare program.</p>
 				</div><!-- /.column -->
 				<div class="col-sm-3 mt30-xs rightReveal">
 					<h5 class="heading-1 mb20">Pro tip</h5>
@@ -540,11 +553,11 @@
 				<div class="col-sm-8 col-sm-offset-2 text-center">
 					<span class="ion-android-bicycle logo"></span>
 					<h2 class="theme-title">SF BikeShare 2016</h2>
-					<h3><a href="https://www.linkedin.com/in/jeff-paterson-164837118"><span class="ion-social-linkedin"></span></a>
+					<h3><a href="https://www.linkedin.com/in/jeff-paterson-164837118" target='_blank'><span class="ion-social-linkedin"></span></a>
 					 Jeff Paterson 
-					<a href="https://github.com/jeffpaterson"><span class="ion-social-github"></span></a><br>
+					<a href="https://github.com/jeffpaterson" target='_blank'><span class="ion-social-github"></span></a><br>
 					jefpaterson@gmail.com</h3><p>
-					<a href="http://jeffpaterson.net">
+					<a href="http://jeffpaterson.net" target='_blank'>
 					<button type="button" class="btn btn-primary btn-lg"><span class="ion-earth"></span> jeffpaterson.net</button></a>
 					
 				</div>
@@ -554,28 +567,28 @@
 					<hr>
 					<button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Up</button>
 					<p><strong>Project created with:</strong><br>
-					<strong><a href="http://getbootstrap.com/">Bootstrap</a> 
+					<strong><a href="http://getbootstrap.com/" target='_blank'>Bootstrap</a> 
 					<span class="ion-link"></span> 
-					<a href="https://jquery.com/">jQuery</a> 
+					<a href="https://jquery.com/" target='_blank'>jQuery</a> 
 					<span class="ion-link"></span> 
-					<a href="https://d3js.org/">d3</a></strong> (Data Visualization) <strong> 
+					<a href="https://d3js.org/" target='_blank'>d3</a></strong> (Data Visualization) <strong> 
 					<span class="ion-link"></span> 
-					<a href="https://developers.google.com/maps/">Google Maps</a></strong><br>
-					<a href="http://www.bayareabikeshare.com/open-data"><strong>San Francisco Bay Area BikeShare Open Data</strong></a><br>
+					<a href="https://developers.google.com/maps/" target='_blank'>Google Maps</a></strong><br>
+					<a href="http://www.bayareabikeshare.com/open-data" target='_blank'><strong>San Francisco Bay Area BikeShare Open Data</strong></a><br>
 					<i>with additional JavaScript widgets:</i><br>
-					<a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a> 
+					<a href="http://dimsemenov.com/plugins/magnific-popup/" target='_blank'>Magnific Popup</a> 
 					<span class="ion-ios-gear-outline"></span> 
-					<a href="https://mixitup.kunkalabs.com/">MixItUp</a> 
+					<a href="https://mixitup.kunkalabs.com/" target='_blank'>MixItUp</a> 
 					<span class="ion-ios-gear-outline"></span> 
-					<a href="https://codecanyon.net/item/melonhtml5-royal-preloader/3746554">Royal Preloader</a>
+					<a href="https://codecanyon.net/item/melonhtml5-royal-preloader/3746554" target='_blank'>Royal Preloader</a>
 					<br>
-					<a href="https://github.com/protonet/jquery.inview">InView</a> 
+					<a href="https://github.com/protonet/jquery.inview" target='_blank'>InView</a> 
 					<span class="ion-ios-gear-outline"></span> 
-					<a href="https://github.com/mhuggins/jquery-countTo">countTo</a> 
+					<a href="https://github.com/mhuggins/jquery-countTo" target='_blank'>countTo</a> 
 					<span class="ion-ios-gear-outline"></span>
-					<a href="https://scrollrevealjs.org/">Scroll Reveal</a> 
+					<a href="https://scrollrevealjs.org/" target='_blank'>Scroll Reveal</a> 
 					<span class="ion-ios-gear-outline"></span>
-					<a href="http://pixelcog.github.io/parallax.js/">Parallax</a>
+					<a href="http://pixelcog.github.io/parallax.js/" target='_blank'>Parallax</a>
 					</p>
 					
 				</div><!-- /.column -->
@@ -596,6 +609,8 @@
 	<script type="text/javascript" src="js/jquery.countTo.js"></script>  
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/scrollreveal.js"></script>
+	<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/circle.js"></script>
 	
 	<script type="text/javascript">
 		/* ---- Counter (our count) ---- */
