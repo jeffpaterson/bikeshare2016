@@ -8,9 +8,9 @@ function initMap() {
   var map = new google.maps.Map(d3.select("#map-here").node(), {
     zoom: 10,
     center: new google.maps.LatLng(37.7, -122.3), // center on SF bay 
+    styles: [{"featureType":"landscape","stylers":[{"saturation":-25},{"lightness":25},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-25},{"lightness":25},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-20},{"lightness":20},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-25},{"lightness":20},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":0},{"visibility":"on"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-10},{"saturation":0}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#6599FF"},{"lightness":0},{"saturation":0}]}],
     mapTypeId: google.maps.MapTypeId.MAP
   });
-
 
 var colors = ["#ffffcc","#ffeda0","#fed976","#feb24c","#fd8d3c","#fc4e2a","#e31a1c","#bd0026","#800026"];
 
@@ -64,7 +64,7 @@ d3.csv("data/zipcode_rides.csv", function(data) {
           .attr("y", padding)
           .attr("dy", ".5em")
           .attr("class", "label")
-          .text(function(d) { return d.value.zip; });
+          .text(function(d) { return d.value.name; });
  
       function transform(d) {
         d = new google.maps.LatLng(d.value['lat'], d.value['lon']);
@@ -111,13 +111,13 @@ d3.csv("data/bart.csv", function(data) {
           .attr("cy", padding);
  
       // Add a label.
-      marker.append("svg:text")
-          .attr("x", padding + 7)
-          .attr("y", padding)
-          .attr("dy", ".5em")
-          .attr("class", "label")
+      // marker.append("svg:text")
+      //     .attr("x", padding + 7)
+      //     .attr("y", padding)
+      //     .attr("dy", ".5em")
+      //     .attr("class", "label")
           //.text(function(d) { return d.value[2]; });
-          .text(function(d) { return d.value['name']; });
+          // .text(function(d) { return d.value['name']; });
  
       function transform(d) {
         d = new google.maps.LatLng(d.value['lat'], d.value['lon']);
@@ -132,5 +132,58 @@ d3.csv("data/bart.csv", function(data) {
   // Bind our overlay to the map…
   overlay.setMap(map);
 });
+
+
+d3.csv("data/caltrain.csv", function(data) {
+  var overlay = new google.maps.OverlayView();
+ 
+  // Add the container when the overlay is added to the map.
+  overlay.onAdd = function() {
+    var layer = d3.select(this.getPanes().overlayLayer).append("div")
+        .attr("class", "overlay");
+ 
+    // Draw each marker as a separate SVG element.
+    // We could use a single SVG, but what size would it have?
+    overlay.draw = function() {
+      var projection = this.getProjection(),
+          padding = 10;
+ 
+      var marker = layer.selectAll("svg")
+          .data(d3.entries(data))
+          .each(transform) // update existing markers
+          .enter().append("svg:svg")
+          .each(transform)
+          .attr("class", "marker");
+ 
+      // Add a circle.
+      marker.append("svg:circle")
+          .attr("r", 5)
+          .attr('fill','green')
+          .attr("cx", padding)
+          .attr("cy", padding);
+ 
+      // Add a label.
+      // marker.append("svg:text")
+      //     .attr("x", padding + 7)
+      //     .attr("y", padding)
+      //     .attr("dy", ".5em")
+      //     .attr("class", "label")
+          //.text(function(d) { return d.value[2]; });
+          // .text(function(d) { return d.value['name']; });
+ 
+      function transform(d) {
+        d = new google.maps.LatLng(d.value['lat'], d.value['lon']);
+        d = projection.fromLatLngToDivPixel(d);
+        return d3.select(this)
+            .style("left", (d.x - padding) + "px")
+            .style("top", (d.y - padding) + "px");
+      }
+    };
+  };
+ 
+  // Bind our overlay to the map…
+  overlay.setMap(map);
+});
+
 
 };

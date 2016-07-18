@@ -4,24 +4,34 @@
 <head>
     <meta charset="utf-8">
     <title>Regional map by zip codes</title>
-    <link rel="stylesheet" href="css/zipcodemap.css">
+    <link href="css/style.css" rel="stylesheet" title="main-css">
+    <link href="css/zipcodemap.css" rel="stylesheet">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png" />
 </head>
 
 <body>
+    <div class="service-name no-margin no-padding" align="center">
+      <h2 class="no-margin no-padding">BikeShare 2016 User's Home Zipcode</h2>
+      <p>Red dots represent BikeShare users by home zip codes.
+      Green dots are Caltrain stations, blue are BART.</p>
+    
+    </div>
+    
+    <div class="wrapper">
+      <div id="map-here"></div>
+    </div>
+
+    <div align="center">
+      <a href="/index.html"><button class="btn btn-primary btn-lg"><span class="ion-android-bicycle"></span> BikeShare 2016 Home Page</button></a>
+      <p></p>
+    </div>
+  </div>  
+  
   <script src="js/zipcodemap.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJk2ywVKdQpPRzqyJrnNIxQPM1B5AQrCg&callback=initMap" async defer></script>
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <!-- <script src="js/colors.js"></script> -->
-
-  <div class="wrapper">
-    <p>Riders by home zip codes. Blue dots are BART stations.</p>
-    <div id="map-here"></div>
-  </div>
-  </div>  
-    
-  
-
 </body>
 
 </html>

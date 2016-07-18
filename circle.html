@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<header>
+<head>
+  <html lang="en">
+  <meta charset="utf-8">
   <link href="css/circle.css" rel="stylesheet">
-</header>
+  <link href="css/style.css" rel="stylesheet" title="main-css">
+  <link href="/favicon.png" rel="shortcut icon" type="image/png" />
+</head>
+
 <body>
-  <div class="title">
-    <div id="circle-here"></div>
-    <h1>SF Bay AreaBike Share Rides</h1>
-    <p>Mouse over each station to see how many rides begin at there, and where those trips ended.</p>
-  </div>
+  <div class="service-name">
+    <div style="width:1100px;text-align: center;">
+      <h2>SF Bay Area BikeShare Rides</h2>
+      <p>Mouse over each station to see how many rides begin there, and where those trips ended.</p>
+      <a href="/index.html"><button class="btn btn-primary"><span class="ion-android-bicycle"></span>BikeShare 2016 Home Page</button></a>
+    </div>   
+  <div id="circle-here"></div>
+</div>
   
 <script src="http://d3js.org/d3.v3.min.js"></script>
-
-<!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/circle.js"></script>
 
 </body>

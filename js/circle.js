@@ -41,7 +41,7 @@ var fill = d3.scale.ordinal()
     .range(['#c7b570','#c6cdc7','#335c64','#768935','#507282','#5c4a56','#aa7455','#574109','#837722','#73342d','#0a5564','#9c8f57','#7895a4','#4a5456','#b0a690','#0a3542',]);
 
 var svg = d3.select("#circle-here").append("svg")
-    .attr("width", "90%")
+    .attr("width", "100%")
     .attr("height", "900px")
   .append("g")
     .attr("transform", "translate(" + width / 2 + ", 500)");
@@ -60,7 +60,7 @@ g.append("path")
 g.append("text")
     .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
     .attr("dy", ".35em")
-    .style("fill", "#FFFFFF")
+    .style("fill", "#fff")
     .style("font-family", "helvetica, arial, sans-serif")
     .style("font-size", "11px")
     .attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })

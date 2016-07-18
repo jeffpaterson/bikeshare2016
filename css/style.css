@@ -946,6 +946,7 @@ ul.social-buttons li a:active {
     color: #FFF;
     white-space: nowrap;
     font-size: 12px;
+    text-align: right;
 }
 
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
@@ -958,7 +959,7 @@ ul.social-buttons li a:active {
     background-color: #3C3C3C;
     border: 1px solid rgba(66,67,66,1);
     border-radius: 0;
-    min-width: 150px;
+    min-width: 100px;
     box-shadow: none;
     padding: 12px 0;
 }
