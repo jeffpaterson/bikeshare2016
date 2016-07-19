@@ -1,31 +1,33 @@
-//Lets require/import the HTTP module
-var http = require('http');
 
-//Lets define a port we want to listen to
-const PORT=8081; 
+const http = require('http')  
+const express = require('express') 
+const request = require('request-promise') 
+const port = 8081
 
-//We need a function which handles requests and send response
-function handleRequest(request, response){
-  console.log("handleRequest begin");
-  var req = http.request({
-    host: 'www.bayareabikeshare.com',
-    //host: 'http://localhost:8081',
-    path: '/stations/json' // full URL as path
-  }, function (res) {
-    console.log("response is back");
-      res.on('data', function (data) {
-        console.log("data is here");
-        response.setHeader('Content-Type', 'application/json');
-        response.end(data.toString());
-      });
-  });    
+const requestHandler = (request, response) => {  
+  console.log(request.url)
+  response.end('Hello Node.js Server!')
 }
 
-//Create a server
-var server = http.createServer(handleRequest);
+const server = http.createServer(requestHandler)
 
-//Lets start our server
-server.listen(PORT, function(){
-    //Callback triggered when server is successfully listening. Hurray!
-    console.log("Server listening on: http://localhost:%s", PORT);
-});
+var options = {
+    uri: 'http://www.bayareabikeshare.com/stations/json',
+  
+    headers: {
+        'User-Agent': 'Request-Promise'
+    },
+    json: true // Automatically parses the JSON string in the response 
+};
+
+console.log(options);
+
+server.listen(port, (err) => {  
+  if (err) {
+    return console.log('something bad happened', err)
+  }
+
+  console.log(`server is listening on ${port}`)
+})
+
+// reference -- https://gist.github.com/diorahman/1520485

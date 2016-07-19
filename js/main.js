@@ -14,38 +14,6 @@ $('.process-box').hover(function() {
 	$(this).find('.process-intro').fadeIn();
 });
 
-/* ---- work gallery ---- */
-// $('#work').magnificPopup({
-//     delegate: 'a.zoom',
-//     type: 'image',
-//     fixedContentPos: false,
-//     removalDelay: 300,
-//     mainClass: 'mfp-fade',
-//     gallery: {
-//         enabled: true,
-//         preload: [0,2]
-//     }
-// });
-
-/* ---- popup image ---- */
-// $('.popup-img').magnificPopup({
-//     type: 'image',
-//     removalDelay: 300,
-//     mainClass: 'mfp-fade'
-// });
-
-/* ---- popup video ---- */
-// $(document).ready(function() {
-//     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-//         disableOn: 700,
-//         type: 'iframe',
-//         mainClass: 'mfp-fade',
-//         removalDelay: 160,
-//         preloader: false,
-//         fixedContentPos: false
-//     });
-// });
-
 /* ---- nav smooth scroll ---- */
 $(document).ready(function() {
     $('.scroll-link').on('click', function(event){
@@ -115,17 +83,3 @@ $(document).on('click','.navbar-collapse.in',function(e) {
         $(this).collapse('hide');
     }
 });
-
-/* ---- rotater text ---- */
-// var current = 1; 
-// var height = jQuery('.ticker').height(); 
-// var numberDivs = jQuery('.ticker').children().length; 
-// var first = jQuery('.ticker h1:nth-child(1)'); 
-// setInterval(function() {
-//     var number = current * -height;
-//     first.css('margin-top', number + 'px');
-//     if (current === numberDivs) {
-//         first.css('margin-top', '0px');
-//         current = 1;
-//     } else current++;
-// }, 2500);
