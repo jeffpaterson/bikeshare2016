@@ -1,15 +1,22 @@
+.svg-circle-container {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    padding-bottom: 90%; /* aspect ratio */
+    vertical-align: middle;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 body {
   background: #1D1D1D;
 }
 
-div.title{
-  font-family: sans-serif;
-  text-align: center;
-  color: white;
-}
-h1{
-  font-size: 50px;
-}
 .chord path {
   fill-opacity: .7;
 }
@@ -19,7 +26,7 @@ div.tooltip {
   position: absolute;
   text-align: center;
   padding: 8px;
-  font: 11px sans-serif;
+  font: 14px sans-serif;
   background: #ddd;
   border: solid 1px black;
   border-radius: 8px;

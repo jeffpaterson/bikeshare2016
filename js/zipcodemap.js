@@ -29,7 +29,8 @@ d3.csv("data/zipcode_rides.csv", function(data) {
               .range(colors);
   var radiusScale = d3.scale.threshold()
               .domain([50,100,200,400,600,1000,2000,8000])
-              .range([3,4,5,6,7,8,9,10]);      
+              // .range([3,4,5,6,7,8,9,10]);  
+              .range([5,6,7,8,9,10,11,12]);    
   
   
   // Add the container when the overlay is added to the map.
@@ -41,7 +42,7 @@ d3.csv("data/zipcode_rides.csv", function(data) {
     // We could use a single SVG, but what size would it have?
     overlay.draw = function() {
       var projection = this.getProjection(),
-          padding = 10;
+          padding = 12;
  
       var marker = layer.selectAll("svg")
           .data(d3.entries(data))
@@ -53,9 +54,10 @@ d3.csv("data/zipcode_rides.csv", function(data) {
       // Add a circle.
       marker.append("svg:circle")
           .attr("r", function(d){ return radiusScale(d.value.rides)})
+          .style('opacity', 0.85)
           .attr("cx", padding)
-          .attr("cy", padding)
-          .attr('stroke','black')
+          .attr("cy", padding-1)
+          .attr('stroke','gray')
           .attr('fill', function(d){ return colorScale(d.value.rides)});
  
       // Add a label.
@@ -105,10 +107,10 @@ d3.csv("data/bart.csv", function(data) {
  
       // Add a circle.
       marker.append("svg:circle")
-          .attr("r", 5)
+          .attr("r", 10)
           .attr('fill','blue')
-          .attr("cx", padding)
-          .attr("cy", padding);
+          // .attr("cx", padding)
+          // .attr("cy", padding);
  
       // Add a label.
       // marker.append("svg:text")
@@ -157,10 +159,10 @@ d3.csv("data/caltrain.csv", function(data) {
  
       // Add a circle.
       marker.append("svg:circle")
-          .attr("r", 5)
+          .attr("r", 10)
           .attr('fill','green')
-          .attr("cx", padding)
-          .attr("cy", padding);
+          // .attr("cx", padding)
+          // .attr("cy", padding);
  
       // Add a label.
       // marker.append("svg:text")

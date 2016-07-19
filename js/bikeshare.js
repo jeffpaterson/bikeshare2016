@@ -40,15 +40,9 @@ function initMap() {
     map = new google.maps.Map(mapElement, mapOptions);
 }
 
- // $.ajax({
- //        url: "http://www.bayareabikeshare.com/stations/json",
- //        dataType: 'jsonp',
- //        jsonpCallback: 'updateBikeShareInfo',
- //        jsonp: 'callback',
- //    });
-
-function updateBikeShareInfo( data ) {
+function updateBikeShareInfo( ) {
     var id = Math.floor(Math.random()*5 + 1);  
+    // $.getJSON( 'http://www.bayareabikeshare.com/stations/json?callback=?',
     $.getJSON( "bikeshare" + id+".json", 
         function ( data ) {
             deleteMarkers();
