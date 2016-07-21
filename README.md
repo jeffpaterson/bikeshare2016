@@ -1,7 +1,8 @@
+<img src="images/logo.png" align="right" hspace="10" alt="logo" width="200">
 <h2>SF Bay Area BikeShare 2016 app<br>
 by Jeff Paterson
 </h2>
-<img src="images/logo.png" align="right" hspace="10" alt="logo">
+
 <p>
 Live status of every Bay Area kiosk in the regional BikeShare program, as well as detailed data visualization and analysis of the 2015 BikeShare data set.
 </p>
