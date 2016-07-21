@@ -1018,9 +1018,9 @@ ul.social-buttons li a:active {
 }
 
 .jumbotron.jumbotron-main hr {
-	border-width: 1px 0px;
+	border-width: 2px 0px;
     border-style: dotted none;
-    border-color: rgba(255, 255, 255, 0.35);
+    border-color: #1b8af9;
     -moz-border-top-colors: none;
     -moz-border-right-colors: none;
     -moz-border-bottom-colors: none;
@@ -1076,10 +1076,11 @@ ul.social-buttons li a:active {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 80px;
-    color: #383434;
+    color: #1b8af9;
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
+    background-color: #2f2f2f;
     margin:0;
 }
 
@@ -1088,7 +1089,7 @@ ul.social-buttons li a:active {
 }
 
 .register-form {
-    background-color: #FFFFFF;
+    background-color: #1b8af9;
     padding: 40px;
     border-radius: 5px;
     border: 2px solid #eee;
@@ -1099,11 +1100,14 @@ ul.social-buttons li a:active {
 }
 
 .jumbotron.jumbotron-register h1 { 
-    font-size:60px; 
+    -webkit-text-stroke: 2px white;
+    font-size:70px; 
 }
 
-.jumbotron.jumbotron-register h2 hr {
-    color: #1b8af9;
+.jumbotron.jumbotron-register h2 {
+    -webkit-text-stroke: 1px gray;
+    color: #FFF;
+
 }
 
 #video-background { 
@@ -1650,106 +1654,9 @@ span.portfolio-hover a {
     color: #313131;
 }
 
-
-#thework {
-	display: -webkit-flex;
-	-webkit-flex-flow: row wrap;
-	-webkit-justify-content: space-between;
-	-webkit-align-content: flex-start;
-}
-
-/* =Pricing
--------------------------------------------------------------- */
-.plan {
-	list-style: none;
-    padding: 0;
-    background: #2B2B2B;
-	text-align: center;
-}
-
-.plan li {
-	padding: 10px 15px;
-	font-size: 14px;
-    color: #ccc;
-    border-top: 1px solid #313131;
-	-webkit-transition: 300ms;
-	transition: 300ms;
-}
-
-.plan li.plan-price {
-	border-top: 0;
-}
-
-.plan li.plan-name {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	padding: 15px;
-	font-size: 24px;
-	line-height: 24px;
-	color: #fff;
-    background: #191919;
-	margin-bottom: 15px;
-	border-top: 0;
-}
-
-.plan li > strong {
-	color: #1b8af9;
-	font-size: 18px;
-}
-
-.plan li.plan-action {
-    padding: 18px;
-}
-
-.plan.featured {
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
-}
-
-.plan.featured li.plan-name {
-	background: #191919;
-}
-
-.plan.featured:hover li.plan-name {
-	background: #1b8af9;
-}
-
-.plan.featured2 li.plan-name {
-    background: #191919;
-}
-
-.plan.featured2:hover li.plan-name {
-    background: #1b8af9;
-}
-
-.plan:hover li.plan-name {
-	background: #131313;
-}
-
-.plan-name-option3 {
-    font-size: 12px !important;
-    margin-bottom: 0 !important;
-    font-weight: 300 !important;
-}
-
-#footer {
-	margin-top: 100px;
-	padding-bottom: 30px;
-}
-
-.pricing-clients {
-	width: 150px;
-	display: inline-block;
-	opacity: .6;
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-o-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
-}
-
-.pricing-clients:hover {
-	opacity: 1;
+.footer-padding {
+    margin-top: 100px;
+    padding-bottom: 150px;
 }
 
 /* =Timeline
