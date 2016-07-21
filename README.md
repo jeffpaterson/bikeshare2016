@@ -8,17 +8,17 @@ Live status of every Bay Area kiosk in the regional BikeShare program, as well a
 BikeShare API overlaid on Goggle Maps API, with data visualizations using D3. jQuery, and extended libraries, are used extensively for visual transitions.
 </p>
 <p>
-<img src="images/screen1" alt="Screen shoot">
+<img src="images/screen1.jpg" alt="Screenshot">
 </p>
 <p>
-<img src="images/screen2" alt="Screen shoot">
+<img src="images/screen2.jpg" alt="Screenshot">
 </p>
 <p>
-<img src="images/screen3" alt="Screen shoot">
+<img src="images/screen3.jpg" alt="Screenshot">
 </p>
 <p>
-<img src="images/screen4" alt="Screen shoot">
+<img src="images/screen4.jpg" alt="Screenshot">
 </p>
 <p>
-<img src="images/screen5" alt="Screen shoot">
+<img src="images/screen5.jpg" alt="Screenshot">
 </p>
