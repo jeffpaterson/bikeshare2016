@@ -12,7 +12,7 @@ var locations = {'palo-alto': {lat: 37.4356, lng: -122.1553},
 
 $( document ).ready(function() {
     updateBikeShareInfo();
-    window.setInterval(updateBikeShareInfo,9000);
+    window.setInterval(updateBikeShareInfo,60000);
     $('.bikeshare-area').click((event) => {
         console.log(event);
         var locationId = $(event.toElement).attr("id");
@@ -42,8 +42,9 @@ function initMap() {
 
 function updateBikeShareInfo( ) {
     var id = Math.floor(Math.random()*5 + 1);  
-    // $.getJSON( 'http://www.bayareabikeshare.com/stations/json?callback=?',
-    $.getJSON( "bikeshare" + id+".json", 
+    //$.getJSON( 'http://www.bayareabikeshare.com/stations/json?callback=?',
+    $.getJSON( 'http://localhost:8081/json',
+    // $.getJSON( "bikeshare" + id+".json", 
         function ( data ) {
             deleteMarkers();
             data.stationBeanList.forEach((station) => {

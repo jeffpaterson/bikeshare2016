@@ -1,33 +1,52 @@
+var http = require("http");
+var express = require('express');
+var app = express();
+app.set('view engine', 'jade');
+app.use(express.static('public'));
 
-const http = require('http')  
-const express = require('express') 
-const request = require('request-promise') 
-const port = 8081
+// const requestHandler = (request, response) => {  
+//   console.log(request.url);
+//   var sendJSON = (json) => {
+//     response.setHeader('Content-Type', 'application/json');
+//     response.end(json);
+//   }
+//   getBikeShareInfo(sendJSON);
+// }
 
-const requestHandler = (request, response) => {  
-  console.log(request.url)
-  response.end('Hello Node.js Server!')
-}
+app.get('/', function(req, res) {
+    res.sendFile('index.html')
+});
 
-const server = http.createServer(requestHandler)
 
-var options = {
-    uri: 'http://www.bayareabikeshare.com/stations/json',
-  
-    headers: {
-        'User-Agent': 'Request-Promise'
-    },
-    json: true // Automatically parses the JSON string in the response 
-};
+app.get('/json', function(request, response) {
+  console.log(request.url);
+  var sendJSON = (json) => {
+    response.setHeader('Content-Type', 'application/json');
+    response.end(json);
+  }
+  getBikeShareInfo(sendJSON);
+});
 
-console.log(options);
+// const server = http.createServer(requestHandler);
 
-server.listen(port, (err) => {  
-  if (err) {
-    return console.log('something bad happened', err)
+function getBikeShareInfo(callback) {
+
+    return http.get({
+        host: 'www.bayareabikeshare.com',
+        path: '/stations/json',
+        headers: {
+        'Content-Type': 'application/json'
+        }
+    }, function(response) {
+        // Continuously update stream with data
+        var body = '';
+        response.on('data', function(d) {
+            body += d;
+        });
+        response.on('end', function() {
+            callback(body);
+        });
+    });
   }
 
-  console.log(`server is listening on ${port}`)
-})
-
-// reference -- https://gist.github.com/diorahman/1520485
+var server = app.listen(8081);
