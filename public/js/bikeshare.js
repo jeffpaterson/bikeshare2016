@@ -43,7 +43,7 @@ function initMap() {
 function updateBikeShareInfo( ) {
     var id = Math.floor(Math.random()*5 + 1);  
     //$.getJSON( 'http://www.bayareabikeshare.com/stations/json?callback=?',
-    $.getJSON( 'https://bikeshare2016.herokuapp.com/json',
+    $.getJSON( 'http://bikeshare2016.herokuapp.com/json',
     // $.getJSON( "bikeshare" + id+".json", 
         function ( data ) {
             deleteMarkers();
