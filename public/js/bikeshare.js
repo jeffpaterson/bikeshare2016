@@ -1,4 +1,5 @@
 var map;
+var markerOutline;
 var bikeshareInfo;
 var bikeshareInfoId = 1;
 var markers = [];
@@ -41,10 +42,14 @@ function initMap() {
 }
 
 function updateBikeShareInfo( ) {
-    var id = Math.floor(Math.random()*5 + 1);  
-    //$.getJSON( 'http://www.bayareabikeshare.com/stations/json?callback=?',
+    
+// activate for live data feed
     $.getJSON( 'http://bikeshare2016.herokuapp.com/json',
-    // $.getJSON( "bikeshare" + id+".json", 
+    
+// active for simulated data, from random static json files
+    // var id = Math.floor(Math.random()*5 + 1);  
+    // $.getJSON( "data/bikeshare" + id+".json", 
+        
         function ( data ) {
             deleteMarkers();
             data.stationBeanList.forEach((station) => {
@@ -56,15 +61,19 @@ function updateBikeShareInfo( ) {
                                     'oneQtrCircle' : 'M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.246,4.253,9.5,9.5,9.5c5.246,0,9.5-4.254,9.5-9.5C19.5,4.753,15.246,0.5,10,0.5 M10,18.637c-0.372,0-0.735-0.031-1.094-0.077C6.9,16.278,5.682,13.275,5.682,10c0-3.276,1.219-6.278,3.224-8.56C9.265,1.395,9.628,1.364,10,1.364c4.771,0,8.637,3.867,8.637,8.636C18.637,14.771,14.771,18.637,10,18.637',
                                     'threeQtrCircle' : 'M10,0.375c-5.229,0-9.469,4.239-9.469,9.469S4.771,19.312,10,19.312s9.469-4.239,9.469-9.469S15.229,0.375,10,0.375 M11.079,18.377c2.005-2.275,3.225-5.262,3.225-8.533c0-3.272-1.22-6.258-3.225-8.533c4.243,0.531,7.529,4.145,7.529,8.533C18.608,14.232,15.322,17.846,11.079,18.377', 
                                 };
-                var markerOutline = markerPath.fullCircle;
                 
-                if (station.availableBikes < 14 && station.availableBikes > 9 ){
+                // set shape based on number of bikes available
+
+                if (station.availableBikes >= 12){
+                    markerOutline = markerPath.fullCircle;
+                }                
+                else if (station.availableBikes < 12 && station.availableBikes > 7 ){
                     markerOutline = markerPath.threeQtrCircle;
                 }                
-                else if (station.availableBikes <=9 && station.availableBikes > 5 ){
+                else if (station.availableBikes <=7 && station.availableBikes > 4 ){
                     markerOutline = markerPath.halfCircle;
                 } 
-                else if (station.availableBikes <=5 && station.availableBikes > 2) {
+                else if (station.availableBikes <=4 && station.availableBikes > 2) {
                     markerOutline = markerPath.oneQtrCircle;
                 } 
                 else if (station.availableBikes === 2 || station.availableBikes === 1) {
@@ -75,6 +84,8 @@ function updateBikeShareInfo( ) {
                     markerOutline = markerPath.emptyCircle;
                     markerColor = '#e57291';
                 }
+
+                // set shape to red full circle if no bike docks available 
 
                 if (station.availableDocks < 1) {
                     markerColor = '#b39ee2';
